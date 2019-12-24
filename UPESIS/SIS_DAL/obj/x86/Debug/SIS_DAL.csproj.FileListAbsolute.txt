@@ -1,5 +1,0 @@
-F:\Demo\pacssoft\BIN\SIS_DAL.dll
-F:\Demo\pacssoft\BIN\SIS_DAL.pdb
-F:\Demo\pacssoft\UPESIS\SIS_DAL\obj\x86\Debug\SIS_DAL.csprojResolveAssemblyReference.cache
-F:\Demo\pacssoft\UPESIS\SIS_DAL\obj\x86\Debug\SIS_DAL.dll
-F:\Demo\pacssoft\UPESIS\SIS_DAL\obj\x86\Debug\SIS_DAL.pdb

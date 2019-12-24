@@ -1,7 +1,0 @@
-D:\MySystems\U-P-E_SIS\IDAL\obj\Debug\ResolveAssemblyReference.cache
-D:\MySystems\U-P-E_SIS\IDAL\bin\Debug\IDAL.dll
-D:\MySystems\U-P-E_SIS\IDAL\bin\Debug\IDAL.pdb
-D:\MySystems\U-P-E_SIS\IDAL\bin\Debug\SIS_Function.dll
-D:\MySystems\U-P-E_SIS\IDAL\bin\Debug\SIS_Function.pdb
-D:\MySystems\U-P-E_SIS\IDAL\obj\Debug\IDAL.dll
-D:\MySystems\U-P-E_SIS\IDAL\obj\Debug\IDAL.pdb

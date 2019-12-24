@@ -15,5 +15,6 @@
     <ProjectView>ProjectFiles</ProjectView>
     <ReferencePath>C:\Program Files\Common Files\Business Objects\2.7\Managed\</ReferencePath>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <ErrorReportUrlHistory />
   </PropertyGroup>
 </Project>
