@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DA32294-A6DF-4176-B142-0A6089120E15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ILL</RootNamespace>
+    <AssemblyName>ILL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IArchives.cs" />
+    <Compile Include="IBespeak.cs" />
+    <Compile Include="IChargeClass.cs" />
+    <Compile Include="IChargeItemClassDict.cs" />
+    <Compile Include="IClinicDoctorDict.cs" />
+    <Compile Include="IClinicOfficeDict.cs" />
+    <Compile Include="IDeptVsQueue.cs" />
+    <Compile Include="IExamChargeList.cs" />
+    <Compile Include="IExamClass.cs" />
+    <Compile Include="IExamItemDict.cs" />
+    <Compile Include="IImage.cs" />
+    <Compile Include="IImgEquipment.cs" />
+    <Compile Include="IInstance.cs" />
+    <Compile Include="IInterestPatient.cs" />
+    <Compile Include="IPatientInfLocalId.cs" />
+    <Compile Include="IPatientSource.cs" />
+    <Compile Include="IQueueInfo.cs" />
+    <Compile Include="IReport.cs" />
+    <Compile Include="IReportRelation.cs" />
+    <Compile Include="IReportTempDict.cs" />
+    <Compile Include="IReportTrackInf.cs" />
+    <Compile Include="IStat.cs" />
+    <Compile Include="IStudy.cs" />
+    <Compile Include="ISystemFun.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IUsersRole.cs" />
+    <Compile Include="IWorkList.cs" />
+    <Compile Include="ConParam.cs" />
+    <Compile Include="DBControl.cs" />
+    <Compile Include="DBFactory.cs" />
+    <Compile Include="DBGetter.cs" />
+    <Compile Include="DGetSeqValue.cs" />
+    <Compile Include="GetConfig.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="StringConstructor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhereNode.cs" />
+    <Compile Include="IAreaDict.cs" />
+    <Compile Include="IChargeItemDict.cs" />
+    <Compile Include="IExamInquiry.cs" />
+    <Compile Include="ILocationMap.cs" />
+    <Compile Include="IReqScanImage.cs" />
+    <Compile Include="IExamVsCharge.cs" />
+    <Compile Include="IKnowledgeBase.cs" />
+    <Compile Include="IPrintTemplateDict.cs" />
+    <Compile Include="IDeptDataDict.cs" />
+    <Compile Include="IQcCt.cs" />
+    <Compile Include="IQcDeptManDict.cs" />
+    <Compile Include="IQcDigitalImage.cs" />
+    <Compile Include="IQcFilm.cs" />
+    <Compile Include="IQcMri.cs" />
+    <Compile Include="IQcRyDiagDict.cs" />
+    <Compile Include="ILocationMapInf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIS_Function\SIS_Function.csproj">
+      <Project>{B03D2D43-3E66-4F12-8D88-ABBDC00295BF}</Project>
+      <Name>SIS_Function</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

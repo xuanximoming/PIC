@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExamClassWorkDs" targetNamespace="http://tempuri.org/ExamClassWorkDs.xsd" xmlns:mstns="http://tempuri.org/ExamClassWorkDs.xsd" xmlns="http://tempuri.org/ExamClassWorkDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExamClassWorkDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ExamClassWorkDs" msprop:Generator_DataSetName="ExamClassWorkDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EXAMCLASS" msprop:Generator_UserTableName="EXAMCLASS" msprop:Generator_RowDeletedName="EXAMCLASSRowDeleted" msprop:Generator_RowChangedName="EXAMCLASSRowChanged" msprop:Generator_RowClassName="EXAMCLASSRow" msprop:Generator_RowChangingName="EXAMCLASSRowChanging" msprop:Generator_RowEvArgName="EXAMCLASSRowChangeEvent" msprop:Generator_RowEvHandlerName="EXAMCLASSRowChangeEventHandler" msprop:Generator_TableClassName="EXAMCLASSDataTable" msprop:Generator_TableVarName="tableEXAMCLASS" msprop:Generator_RowDeletingName="EXAMCLASSRowDeleting" msprop:Generator_TablePropName="EXAMCLASS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXAM_CLASS" msprop:Generator_UserColumnName="EXAM_CLASS" msprop:Generator_ColumnVarNameInTable="columnEXAM_CLASS" msprop:Generator_ColumnPropNameInRow="EXAM_CLASS" msprop:Generator_ColumnPropNameInTable="EXAM_CLASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_SUB_CLASS" msprop:Generator_UserColumnName="EXAM_SUB_CLASS" msprop:Generator_ColumnVarNameInTable="columnEXAM_SUB_CLASS" msprop:Generator_ColumnPropNameInRow="EXAM_SUB_CLASS" msprop:Generator_ColumnPropNameInTable="EXAM_SUB_CLASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAMCOUNT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EXAMCOUNT" msprop:Generator_ColumnVarNameInTable="columnEXAMCOUNT" msprop:Generator_ColumnPropNameInRow="EXAMCOUNT" msprop:Generator_ColumnPropNameInTable="EXAMCOUNTColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CHARGESUM" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CHARGESUM" msprop:Generator_ColumnVarNameInTable="columnCHARGESUM" msprop:Generator_ColumnPropNameInRow="CHARGESUM" msprop:Generator_ColumnPropNameInTable="CHARGESUMColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EXAM_ITEMS" msprop:Generator_UserColumnName="EXAM_ITEMS" msprop:Generator_ColumnPropNameInRow="EXAM_ITEMS" msprop:Generator_ColumnVarNameInTable="columnEXAM_ITEMS" msprop:Generator_ColumnPropNameInTable="EXAM_ITEMSColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

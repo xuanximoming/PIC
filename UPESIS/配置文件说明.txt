@@ -1,0 +1,4 @@
+登记模式
+[RegisterMode]
+;查询病人信息时是否查询HIS申请单开关
+HisApply=false

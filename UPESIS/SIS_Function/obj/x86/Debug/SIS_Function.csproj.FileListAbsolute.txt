@@ -1,0 +1,7 @@
+F:\Demo\pacssoft\UPESIS\SIS_Function\obj\x86\Debug\SIS_Function.csprojResolveAssemblyReference.cache
+F:\Demo\pacssoft\UPESIS\SIS_Function\obj\x86\Debug\SIS_Function.ProGressForm.resources
+F:\Demo\pacssoft\UPESIS\SIS_Function\obj\x86\Debug\SIS_Function.csproj.GenerateResource.Cache
+F:\Demo\pacssoft\BIN\SIS_Function.dll
+F:\Demo\pacssoft\BIN\SIS_Function.pdb
+F:\Demo\pacssoft\UPESIS\SIS_Function\obj\x86\Debug\SIS_Function.dll
+F:\Demo\pacssoft\UPESIS\SIS_Function\obj\x86\Debug\SIS_Function.pdb

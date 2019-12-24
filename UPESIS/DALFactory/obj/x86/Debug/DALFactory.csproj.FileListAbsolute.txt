@@ -1,0 +1,5 @@
+F:\Demo\pacssoft\BIN\DALFactory.dll
+F:\Demo\pacssoft\BIN\DALFactory.pdb
+F:\Demo\pacssoft\UPESIS\DALFactory\obj\x86\Debug\DALFactory.csprojResolveAssemblyReference.cache
+F:\Demo\pacssoft\UPESIS\DALFactory\obj\x86\Debug\DALFactory.dll
+F:\Demo\pacssoft\UPESIS\DALFactory\obj\x86\Debug\DALFactory.pdb

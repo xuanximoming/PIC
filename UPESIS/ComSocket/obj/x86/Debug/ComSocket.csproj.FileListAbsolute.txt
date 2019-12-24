@@ -1,0 +1,4 @@
+F:\Demo\pacssoft\BIN\ComSocket.dll
+F:\Demo\pacssoft\BIN\ComSocket.pdb
+F:\Demo\pacssoft\UPESIS\ComSocket\obj\x86\Debug\ComSocket.dll
+F:\Demo\pacssoft\UPESIS\ComSocket\obj\x86\Debug\ComSocket.pdb

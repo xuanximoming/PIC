@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BaseControls.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Font_GlassButton" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_VistaButton" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_SkinButton" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_SplitButton" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_CrystalButton" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Arial Black, 15.75pt</Value>
+    </Setting>
+    <Setting Name="Font_MyDataGridView" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 12pt</Value>
+    </Setting>
+    <Setting Name="Font_RichTextBoxEx" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_userTextBox" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_XTextBox" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_MyLabel" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="Font_MyTreeView" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">宋体, 9pt</Value>
+    </Setting>
+    <Setting Name="ForeColor_RichTextBoxEx" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_userTextBox" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_XTextBox" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_MyLabel" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_MyTreeView" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_VistaButton" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ForeColor_MyDataGridView" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ImageCtl_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="ImageCtl_PenWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

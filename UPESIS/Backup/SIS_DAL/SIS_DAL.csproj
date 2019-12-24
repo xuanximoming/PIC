@@ -1,0 +1,101 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09F27A01-660F-4FD3-A603-06F3497BD43D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIS_DAL</RootNamespace>
+    <AssemblyName>SIS_DAL</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DArchives.cs" />
+    <Compile Include="DAreaDict.cs" />
+    <Compile Include="DBespeak.cs" />
+    <Compile Include="DChargeClass.cs" />
+    <Compile Include="DChargeItemClassDict.cs" />
+    <Compile Include="DChargeItemDict.cs" />
+    <Compile Include="DClinicDoctorDict.cs" />
+    <Compile Include="DClinicOfficeDict.cs" />
+    <Compile Include="DDeptVsQueue.cs" />
+    <Compile Include="DExamChargeList.cs" />
+    <Compile Include="DExamClass.cs" />
+    <Compile Include="DExamInquiry.cs" />
+    <Compile Include="DExamItemDict.cs" />
+    <Compile Include="DExamVsCharge.cs" />
+    <Compile Include="DImage.cs" />
+    <Compile Include="DImgEquipment.cs" />
+    <Compile Include="DInterestPatient.cs" />
+    <Compile Include="DLocationMap.cs" />
+    <Compile Include="DPatientInfLocalId.cs" />
+    <Compile Include="DPatientSource.cs" />
+    <Compile Include="DQueueInfo.cs" />
+    <Compile Include="DReport.cs" />
+    <Compile Include="DReportRelation.cs" />
+    <Compile Include="DReportTempDict.cs" />
+    <Compile Include="DReportTrackInf.cs" />
+    <Compile Include="DReqScanImage.cs" />
+    <Compile Include="DStat.cs" />
+    <Compile Include="DStudy.cs" />
+    <Compile Include="DSystemFun.cs" />
+    <Compile Include="DUser.cs" />
+    <Compile Include="DUsersRole.cs" />
+    <Compile Include="DWorkList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DKnowledgeBase.cs" />
+    <Compile Include="DPrintTemplateDict.cs" />
+    <Compile Include="DLocationMapInf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ILL\ILL.csproj">
+      <Project>{5DA32294-A6DF-4176-B142-0A6089120E15}</Project>
+      <Name>ILL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIS_Model\SIS_Model.csproj">
+      <Project>{591564BE-EA17-4487-827A-CBC2D908051A}</Project>
+      <Name>SIS_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

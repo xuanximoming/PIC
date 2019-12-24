@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FF3846D-2823-49CA-980D-67D5737A366C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PACS_Model</RootNamespace>
+    <AssemblyName>PACS_Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MDeptDataDict.cs" />
+    <Compile Include="MAreaDict.cs" />
+    <Compile Include="MChargeClass.cs" />
+    <Compile Include="MChargeItemClassDict.cs" />
+    <Compile Include="MChargeItemDict.cs" />
+    <Compile Include="MDeptVsQueue.cs" />
+    <Compile Include="MExamChargeList.cs" />
+    <Compile Include="MExamClass.cs" />
+    <Compile Include="MExamInquiry.cs" />
+    <Compile Include="MExamItemDict.cs" />
+    <Compile Include="MExamVsCharge.cs" />
+    <Compile Include="MFpaxUsers.cs" />
+    <Compile Include="MArchives.cs" />
+    <Compile Include="MInstance.cs" />
+    <Compile Include="MPatientInfLocalId.cs" />
+    <Compile Include="MPatientSource.cs" />
+    <Compile Include="MPrintTemplateDict.cs" />
+    <Compile Include="MQcInformation.cs" />
+    <Compile Include="MQueueInfo.cs" />
+    <Compile Include="MReport.cs" />
+    <Compile Include="MReqScanImage.cs" />
+    <Compile Include="MStudy.cs" />
+    <Compile Include="MUserDeptDict.cs" />
+    <Compile Include="MUserExamClass.cs" />
+    <Compile Include="MWorkList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MQcCt.cs" />
+    <Compile Include="MQcDeptManDict.cs" />
+    <Compile Include="MQcDigitalImage.cs" />
+    <Compile Include="MQcFilm.cs" />
+    <Compile Include="MQcMri.cs" />
+    <Compile Include="MQcRyDiagDict.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ILL\ILL.csproj">
+      <Project>{5DA32294-A6DF-4176-B142-0A6089120E15}</Project>
+      <Name>ILL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+F:\Demo\pacssoft\BIN\SIS_BLL.dll
+F:\Demo\pacssoft\BIN\SIS_BLL.pdb
+F:\Demo\pacssoft\UPESIS\SIS_BLL\obj\x86\Debug\SIS_BLL.csprojResolveAssemblyReference.cache
+F:\Demo\pacssoft\UPESIS\SIS_BLL\obj\x86\Debug\SIS_BLL.dll
+F:\Demo\pacssoft\UPESIS\SIS_BLL\obj\x86\Debug\SIS_BLL.pdb

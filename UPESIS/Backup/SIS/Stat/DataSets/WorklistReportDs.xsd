@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WorklistReportDs" targetNamespace="http://tempuri.org/WorklistReportDs.xsd" xmlns:mstns="http://tempuri.org/WorklistReportDs.xsd" xmlns="http://tempuri.org/WorklistReportDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WorklistReportDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WorklistReportDs" msprop:Generator_DataSetName="WorklistReportDs" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorklistReport" msprop:Generator_UserTableName="WorklistReport" msprop:Generator_RowDeletedName="WorklistReportRowDeleted" msprop:Generator_RowChangedName="WorklistReportRowChanged" msprop:Generator_RowClassName="WorklistReportRow" msprop:Generator_RowChangingName="WorklistReportRowChanging" msprop:Generator_RowEvArgName="WorklistReportRowChangeEvent" msprop:Generator_RowEvHandlerName="WorklistReportRowChangeEventHandler" msprop:Generator_TableClassName="WorklistReportDataTable" msprop:Generator_TableVarName="tableWorklistReport" msprop:Generator_RowDeletingName="WorklistReportRowDeleting" msprop:Generator_TablePropName="WorklistReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REFER_DEPT" msprop:Generator_UserColumnName="REFER_DEPT" msprop:Generator_ColumnVarNameInTable="columnREFER_DEPT" msprop:Generator_ColumnPropNameInRow="REFER_DEPT" msprop:Generator_ColumnPropNameInTable="REFER_DEPTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REQ_DATE_TIME" msprop:Generator_UserColumnName="REQ_DATE_TIME" msprop:Generator_ColumnVarNameInTable="columnREQ_DATE_TIME" msprop:Generator_ColumnPropNameInRow="REQ_DATE_TIME" msprop:Generator_ColumnPropNameInTable="REQ_DATE_TIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REQ_DEPT_NAME" msprop:Generator_UserColumnName="REQ_DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnREQ_DEPT_NAME" msprop:Generator_ColumnPropNameInRow="REQ_DEPT_NAME" msprop:Generator_ColumnPropNameInTable="REQ_DEPT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_CLASS" msprop:Generator_UserColumnName="EXAM_CLASS" msprop:Generator_ColumnVarNameInTable="columnEXAM_CLASS" msprop:Generator_ColumnPropNameInRow="EXAM_CLASS" msprop:Generator_ColumnPropNameInTable="EXAM_CLASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_SUB_CLASS" msprop:Generator_UserColumnName="EXAM_SUB_CLASS" msprop:Generator_ColumnVarNameInTable="columnEXAM_SUB_CLASS" msprop:Generator_ColumnPropNameInRow="EXAM_SUB_CLASS" msprop:Generator_ColumnPropNameInTable="EXAM_SUB_CLASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_GROUP" msprop:Generator_UserColumnName="EXAM_GROUP" msprop:Generator_ColumnVarNameInTable="columnEXAM_GROUP" msprop:Generator_ColumnPropNameInRow="EXAM_GROUP" msprop:Generator_ColumnPropNameInTable="EXAM_GROUPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_ACCESSION_NUM" msprop:Generator_UserColumnName="EXAM_ACCESSION_NUM" msprop:Generator_ColumnVarNameInTable="columnEXAM_ACCESSION_NUM" msprop:Generator_ColumnPropNameInRow="EXAM_ACCESSION_NUM" msprop:Generator_ColumnPropNameInTable="EXAM_ACCESSION_NUMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PATIENT_SOURCE" msprop:Generator_UserColumnName="PATIENT_SOURCE" msprop:Generator_ColumnVarNameInTable="columnPATIENT_SOURCE" msprop:Generator_ColumnPropNameInRow="PATIENT_SOURCE" msprop:Generator_ColumnPropNameInTable="PATIENT_SOURCEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CHARGESUM" msprop:Generator_UserColumnName="CHARGESUM" msprop:Generator_ColumnVarNameInTable="columnCHARGESUM" msprop:Generator_ColumnPropNameInRow="CHARGESUM" msprop:Generator_ColumnPropNameInTable="CHARGESUMColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSCRIBER" msprop:Generator_UserColumnName="TRANSCRIBER" msprop:Generator_ColumnVarNameInTable="columnTRANSCRIBER" msprop:Generator_ColumnPropNameInRow="TRANSCRIBER" msprop:Generator_ColumnPropNameInTable="TRANSCRIBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REPORT_DATE_TIME" msprop:Generator_UserColumnName="REPORT_DATE_TIME" msprop:Generator_ColumnVarNameInTable="columnREPORT_DATE_TIME" msprop:Generator_ColumnPropNameInRow="REPORT_DATE_TIME" msprop:Generator_ColumnPropNameInTable="REPORT_DATE_TIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EXAMCOUNT" msprop:Generator_UserColumnName="EXAMCOUNT" msprop:Generator_ColumnPropNameInRow="EXAMCOUNT" msprop:Generator_ColumnVarNameInTable="columnEXAMCOUNT" msprop:Generator_ColumnPropNameInTable="EXAMCOUNTColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ABNORMALCOUNT" msprop:Generator_UserColumnName="ABNORMALCOUNT" msprop:Generator_ColumnPropNameInRow="ABNORMALCOUNT" msprop:Generator_ColumnVarNameInTable="columnABNORMALCOUNT" msprop:Generator_ColumnPropNameInTable="ABNORMALCOUNTColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

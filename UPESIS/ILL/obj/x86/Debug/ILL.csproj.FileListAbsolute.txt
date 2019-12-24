@@ -1,0 +1,5 @@
+F:\Demo\pacssoft\UPESIS\ILL\obj\x86\Debug\ILL.csprojResolveAssemblyReference.cache
+F:\Demo\pacssoft\BIN\ILL.dll
+F:\Demo\pacssoft\BIN\ILL.pdb
+F:\Demo\pacssoft\UPESIS\ILL\obj\x86\Debug\ILL.dll
+F:\Demo\pacssoft\UPESIS\ILL\obj\x86\Debug\ILL.pdb

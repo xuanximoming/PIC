@@ -1,0 +1,80 @@
+C:\Documents and Settings\E-Charm\桌面\DESKTOP\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\E-Charm\桌面\DESKTOP\TCP网络通信\自动连接TCP网络聊天\ComSocket\bin\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\DESKTOP\TCP网络通信\自动连接TCP网络聊天\ComSocket\bin\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\DESKTOP\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\DESKTOP\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\自动连接TCP网络聊天\ComSocket\bin\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\自动连接TCP网络聊天\ComSocket\bin\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\自动连接TCP网络聊天\ComSocket\obj\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\ScoketTcp\ComSocket\bin\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\ScoketTcp\ComSocket\bin\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\ScoketTcp\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\ScoketTcp\ComSocket\obj\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\中医院PACS项目\TCP网络通信\ScoketTcp\ComSocket\obj\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\UPEDB20090901\U-P-E_SIS20090901\ComSocket\bin\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\UPEDB20090901\U-P-E_SIS20090901\ComSocket\bin\Debug\ComSocket.pdb
+C:\Documents and Settings\E-Charm\桌面\UPEDB20090901\U-P-E_SIS20090901\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\E-Charm\桌面\UPEDB20090901\U-P-E_SIS20090901\ComSocket\obj\Debug\ComSocket.dll
+C:\Documents and Settings\E-Charm\桌面\UPEDB20090901\U-P-E_SIS20090901\ComSocket\obj\Debug\ComSocket.pdb
+D:\csf\UPE\U-P-E_SIS20091012\ComSocket\bin\Debug\ComSocket.dll
+D:\csf\UPE\U-P-E_SIS20091012\ComSocket\bin\Debug\ComSocket.pdb
+D:\csf\UPE\U-P-E_SIS20091012\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\csf\UPE\U-P-E_SIS20091012\ComSocket\obj\Debug\ComSocket.dll
+D:\csf\UPE\U-P-E_SIS20091012\ComSocket\obj\Debug\ComSocket.pdb
+D:\csf\UPE\COMSOCK最新\ComSocket\bin\Debug\ComSocket.dll
+D:\csf\UPE\COMSOCK最新\ComSocket\bin\Debug\ComSocket.pdb
+D:\csf\UPE\COMSOCK最新\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\csf\UPE\COMSOCK最新\ComSocket\obj\Debug\ComSocket.dll
+D:\csf\UPE\COMSOCK最新\ComSocket\obj\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\COMSOCK最新\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\广州市中医院SOURCE\COMSOCK最新\ComSocket\bin\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\COMSOCK最新\ComSocket\bin\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\COMSOCK最新\ComSocket\obj\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\COMSOCK最新\ComSocket\obj\Debug\ComSocket.pdb
+C:\Documents and Settings\Administrator\桌面\StringOp\ComSocket\bin\Debug\ComSocket.dll
+C:\Documents and Settings\Administrator\桌面\StringOp\ComSocket\bin\Debug\ComSocket.pdb
+C:\Documents and Settings\Administrator\桌面\StringOp\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\StringOp\ComSocket\obj\Debug\ComSocket.dll
+C:\Documents and Settings\Administrator\桌面\StringOp\ComSocket\obj\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\内镜UPESIS\ComSocket\bin\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\内镜UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\内镜UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\广州市中医院SOURCE\20091224\内镜UPESIS\ComSocket\obj\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\内镜UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\申请单UPESIS\ComSocket\bin\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\申请单UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\申请单UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\广州市中医院SOURCE\20091224\申请单UPESIS\ComSocket\obj\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\申请单UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\UPESIS0413\ComSocket\bin\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\UPESIS0413\ComSocket\bin\Debug\ComSocket.pdb
+D:\广州市中医院SOURCE\20091224\UPESIS0413\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+D:\广州市中医院SOURCE\20091224\UPESIS0413\ComSocket\obj\Debug\ComSocket.dll
+D:\广州市中医院SOURCE\20091224\UPESIS0413\ComSocket\obj\Debug\ComSocket.pdb
+E:\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.dll
+E:\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+E:\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+E:\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.dll
+E:\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+E:\工作\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.dll
+E:\工作\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+E:\工作\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+E:\工作\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.dll
+E:\工作\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+E:\工作\超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.dll
+E:\工作\超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+E:\工作\超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+E:\工作\超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.dll
+E:\工作\超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+F:\医疗信息化\医疗文档\Sis超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.dll
+F:\医疗信息化\医疗文档\Sis超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+F:\医疗信息化\医疗文档\Sis超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+F:\医疗信息化\医疗文档\Sis超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.dll
+F:\医疗信息化\医疗文档\Sis超声影像信息管理系统\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.pdb
+F:\boers91\lenovo-THINK\中医院数据库文件\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.dll
+F:\boers91\lenovo-THINK\中医院数据库文件\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\bin\Debug\ComSocket.pdb
+F:\boers91\lenovo-THINK\中医院数据库文件\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ResolveAssemblyReference.cache
+F:\boers91\lenovo-THINK\中医院数据库文件\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.dll
+F:\boers91\lenovo-THINK\中医院数据库文件\中医院数据库文件\01_诊断报告系统\UPESIS\ComSocket\obj\Debug\ComSocket.pdb

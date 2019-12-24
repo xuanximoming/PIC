@@ -1,0 +1,8 @@
+F:\Demo\pacssoft\BIN\Update.exe.config
+F:\Demo\pacssoft\BIN\Update.exe
+F:\Demo\pacssoft\BIN\Update.pdb
+F:\Demo\pacssoft\UPESIS\Update\obj\x86\Debug\Update.Form1.resources
+F:\Demo\pacssoft\UPESIS\Update\obj\x86\Debug\Update.Properties.Resources.resources
+F:\Demo\pacssoft\UPESIS\Update\obj\x86\Debug\Update.csproj.GenerateResource.Cache
+F:\Demo\pacssoft\UPESIS\Update\obj\x86\Debug\Update.exe
+F:\Demo\pacssoft\UPESIS\Update\obj\x86\Debug\Update.pdb

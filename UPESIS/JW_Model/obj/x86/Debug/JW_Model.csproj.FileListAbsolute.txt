@@ -1,0 +1,4 @@
+F:\Demo\pacssoft\BIN\JW_Model.dll
+F:\Demo\pacssoft\BIN\JW_Model.pdb
+F:\Demo\pacssoft\UPESIS\JW_Model\obj\x86\Debug\JW_Model.dll
+F:\Demo\pacssoft\UPESIS\JW_Model\obj\x86\Debug\JW_Model.pdb

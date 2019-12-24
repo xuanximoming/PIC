@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExamDocDs" targetNamespace="http://tempuri.org/ExamDocDs.xsd" xmlns:mstns="http://tempuri.org/ExamDocDs.xsd" xmlns="http://tempuri.org/ExamDocDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExamDocDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ExamDocDs" msprop:Generator_DataSetName="ExamDocDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ExamDocDs" msprop:Generator_UserTableName="ExamDocDs" msprop:Generator_RowDeletedName="ExamDocDsRowDeleted" msprop:Generator_RowChangedName="ExamDocDsRowChanged" msprop:Generator_RowClassName="ExamDocDsRow" msprop:Generator_RowChangingName="ExamDocDsRowChanging" msprop:Generator_RowEvArgName="ExamDocDsRowChangeEvent" msprop:Generator_RowEvHandlerName="ExamDocDsRowChangeEventHandler" msprop:Generator_TableClassName="ExamDocDsDataTable" msprop:Generator_TableVarName="tableExamDocDs" msprop:Generator_RowDeletingName="ExamDocDsRowDeleting" msprop:Generator_TablePropName="_ExamDocDs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXAM_DOCTOR" msprop:Generator_UserColumnName="EXAM_DOCTOR" msprop:Generator_ColumnPropNameInRow="EXAM_DOCTOR" msprop:Generator_ColumnVarNameInTable="columnEXAM_DOCTOR" msprop:Generator_ColumnPropNameInTable="EXAM_DOCTORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PATIENT_SOURCE" msprop:Generator_UserColumnName="PATIENT_SOURCE" msprop:Generator_ColumnPropNameInRow="PATIENT_SOURCE" msprop:Generator_ColumnVarNameInTable="columnPATIENT_SOURCE" msprop:Generator_ColumnPropNameInTable="PATIENT_SOURCEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAMCOUNT" msprop:Generator_UserColumnName="EXAMCOUNT" msprop:Generator_ColumnPropNameInRow="EXAMCOUNT" msprop:Generator_ColumnVarNameInTable="columnEXAMCOUNT" msprop:Generator_ColumnPropNameInTable="EXAMCOUNTColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COSTSUM" msprop:Generator_UserColumnName="COSTSUM" msprop:Generator_ColumnPropNameInRow="COSTSUM" msprop:Generator_ColumnVarNameInTable="columnCOSTSUM" msprop:Generator_ColumnPropNameInTable="COSTSUMColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

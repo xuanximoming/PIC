@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PatientCountDs" targetNamespace="http://tempuri.org/PatientCountDs.xsd" xmlns:mstns="http://tempuri.org/PatientCountDs.xsd" xmlns="http://tempuri.org/PatientCountDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PatientCountDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PatientCountDs" msprop:Generator_DataSetName="PatientCountDs" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PatientCount" msprop:Generator_UserTableName="PatientCount" msprop:Generator_RowDeletedName="PatientCountRowDeleted" msprop:Generator_RowChangedName="PatientCountRowChanged" msprop:Generator_RowClassName="PatientCountRow" msprop:Generator_RowChangingName="PatientCountRowChanging" msprop:Generator_RowEvArgName="PatientCountRowChangeEvent" msprop:Generator_RowEvHandlerName="PatientCountRowChangeEventHandler" msprop:Generator_TableClassName="PatientCountDataTable" msprop:Generator_TableVarName="tablePatientCount" msprop:Generator_RowDeletingName="PatientCountRowDeleting" msprop:Generator_TablePropName="PatientCount">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PATIENT_ID" msprop:Generator_UserColumnName="PATIENT_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_ID" msprop:Generator_ColumnPropNameInRow="PATIENT_ID" msprop:Generator_ColumnPropNameInTable="PATIENT_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_CLASS" msprop:Generator_UserColumnName="EXAM_CLASS" msprop:Generator_ColumnVarNameInTable="columnEXAM_CLASS" msprop:Generator_ColumnPropNameInRow="EXAM_CLASS" msprop:Generator_ColumnPropNameInTable="EXAM_CLASSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PATIENT_NAME" msprop:Generator_UserColumnName="PATIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnPATIENT_NAME" msprop:Generator_ColumnPropNameInRow="PATIENT_NAME" msprop:Generator_ColumnPropNameInTable="PATIENT_NAMEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PATIENT_LOCAL_ID" msprop:Generator_UserColumnName="PATIENT_LOCAL_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_LOCAL_ID" msprop:Generator_ColumnPropNameInRow="PATIENT_LOCAL_ID" msprop:Generator_ColumnPropNameInTable="PATIENT_LOCAL_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COSTS" msprop:Generator_UserColumnName="COSTS" msprop:Generator_ColumnPropNameInRow="COSTS" msprop:Generator_ColumnVarNameInTable="columnCOSTS" msprop:Generator_ColumnPropNameInTable="COSTSColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

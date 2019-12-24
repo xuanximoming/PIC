@@ -1,0 +1,4 @@
+F:\Demo\pacssoft\BIN\PACS_Model.dll
+F:\Demo\pacssoft\BIN\PACS_Model.pdb
+F:\Demo\pacssoft\UPESIS\PACS_Model\obj\x86\Debug\PACS_Model.dll
+F:\Demo\pacssoft\UPESIS\PACS_Model\obj\x86\Debug\PACS_Model.pdb
