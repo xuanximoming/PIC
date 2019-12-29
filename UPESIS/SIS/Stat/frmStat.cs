@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using ILL;
+using SIS_BLL;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using SIS_BLL;
-using ILL;
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
 
 namespace SIS
 {
@@ -36,7 +32,7 @@ namespace SIS
             {
                 this.initData();	//初始化数据
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBoxEx.Show(ex.ToString());
             }
@@ -126,7 +122,7 @@ namespace SIS
             }
             this.cmb_ExamDoc.SelectedIndex = 0;
         }
-       // 诊室列表初始化
+        // 诊室列表初始化
         private void initDiagDept()
         {
             this.cmb_Diag.Items.Clear();
@@ -145,7 +141,7 @@ namespace SIS
         private void initPatientSource()
         {
             SIS_BLL.BPatientSource bPatientSource = new BPatientSource();
-            DataTable dt= bPatientSource.GetList(" 1=1");
+            DataTable dt = bPatientSource.GetList(" 1=1");
             DataRow dw = dt.NewRow();
             if (GetConfig.DALAndModel == "SIS")
             {
@@ -271,7 +267,7 @@ namespace SIS
                 case 4://病人数统计   初始化
                     this.initPatientCount();
                     break;
-                case  1://检查技师统计 初始化
+                case 1://检查技师统计 初始化
                     this.initDoctor();
                     break;
                 case 5: //阴阳性病人数统计初始化
@@ -280,7 +276,7 @@ namespace SIS
                 case 6://各科室申请单统计
                     this.initApplyStatic();
                     break;
-             }
+            }
         }
 
         //诊断医师工作量统计   初始化
@@ -322,8 +318,8 @@ namespace SIS
             if (this.cmb_ExamClass.Text.Trim() == "全部")
             {
                 SIS_BLL.BExamClass bExam_class = new BExamClass();
-                
-                string examClass=GetConfig.ExamClass.Replace(",","','");
+
+                string examClass = GetConfig.ExamClass.Replace(",", "','");
                 DataTable dt = bExamClass.GetList(" exam_class in ('" + examClass + "')");
                 //string[] examSubClass = GetConfig.ExamSubClass.Split(';');
                 this.cmb_ExamSubClass.Items.Add("全部");
@@ -348,14 +344,14 @@ namespace SIS
         //科室工作量统计   初始化
         private void initDiagDeptWork()
         {
-           this.clearPanel();
-           this.initDiagDept(); //诊室列表初始化
-           this.initPatientSource();//初始化病人来源
-           this.p_ExamDoctor.Visible = false;
-           this.p_DiagDoctor.Visible = false;
-           this.p_Diag.Visible = true;
-           this.p_PatientSource.Visible = true;
-           this.p_PatientSource.Location = new Point(4, 100);
+            this.clearPanel();
+            this.initDiagDept(); //诊室列表初始化
+            this.initPatientSource();//初始化病人来源
+            this.p_ExamDoctor.Visible = false;
+            this.p_DiagDoctor.Visible = false;
+            this.p_Diag.Visible = true;
+            this.p_PatientSource.Visible = true;
+            this.p_PatientSource.Location = new Point(4, 100);
         }
         //病人明细统计   初始化
         private void initPatientCount()
@@ -365,12 +361,12 @@ namespace SIS
             this.p_Diag.Visible = false;
             this.p_DiagDoctor.Visible = false;
             this.p_ExamDoctor.Visible = false;
-            this.p_PatientSource.Visible = false ;
+            this.p_PatientSource.Visible = false;
             this.p_ExamClass.Location = new Point(4, 64);
             this.cmb_ExamClass.Visible = true;
             //this.cmb_ExamSubClass.Visible = false;
             //this.label7.Visible = false;
-          
+
         }
 
         //技师工作量统计  初始化
@@ -379,7 +375,7 @@ namespace SIS
             this.clearPanel();
             this.initExamDoc();
             this.p_Diag.Visible = false;
-            this.p_DiagDoctor.Visible = false ;
+            this.p_DiagDoctor.Visible = false;
             this.p_PatientSource.Visible = false;
             this.p_ExamDoctor.Visible = true;
             this.p_ExamDoctor.Location = new Point(4, 64);
@@ -392,7 +388,7 @@ namespace SIS
             this.p_Diag.Visible = false;
             this.p_DiagDoctor.Visible = false;
             this.p_PatientSource.Visible = false;
-            this.p_ExamDoctor.Visible = false ;
+            this.p_ExamDoctor.Visible = false;
         }
         //各科室申请单统计初始化
         private void initApplyStatic()
@@ -412,8 +408,8 @@ namespace SIS
         private void setReportViewer()
         {
             this.rep.SetDataSource(this.queryDs.Tables[0]);
-            this.rep.SetParameterValue("dateA", this.date_StatA.Text);
-            this.rep.SetParameterValue("dateB", this.date_StatB.Text);
+            // this.rep.SetParameterValue("dateA", this.date_StatA.Text);
+            // this.rep.SetParameterValue("dateB", this.date_StatB.Text);
             this.ReportViewer.ReportSource = this.rep;
         }
 
@@ -469,7 +465,7 @@ namespace SIS
                     break;
             }
 
-            this.queryDeptName = " and a.exam_dept = '" + this.cmb_DeptName.SelectedValue.ToString()+"'";
+            this.queryDeptName = " and a.exam_dept = '" + this.cmb_DeptName.SelectedValue.ToString() + "'";
             this.queryDate += queryDeptName;
             switch (i)
             {
@@ -497,7 +493,7 @@ namespace SIS
                         this.queryDate += " and a.EXAM_DOCTOR = '" + cmb_ExamDoctor.Text.Trim() + "'";
                     }
                     break;
-                    //modify by liukun at 2010-6-22　end 
+                //modify by liukun at 2010-6-22　end 
                 case 2://检查类别工作量统计
                     this.queryDiag = this.queryDeptName;
                     //modify by liukun at 2010-6-17　being 
@@ -523,7 +519,7 @@ namespace SIS
                     this.queryPatientSource = this.queryDeptName;
                     if (this.cmb_Diag.Text != "全部")   //诊室
                     {
-                        this.queryDate += " and a.exam_group = '" + this.cmb_Diag.Text.Trim() + "'"; 
+                        this.queryDate += " and a.exam_group = '" + this.cmb_Diag.Text.Trim() + "'";
                     }
                     if (this.cmb_PatientSource.Text != "全部")  //病人来源
                     {
@@ -541,7 +537,7 @@ namespace SIS
                         this.queryDate += " and a.exam_sub_class = '" + this.cmb_ExamSubClass.Text.Trim() + "'";
                     }
                     break;
-                    //modify by liukun at 2010-6-17　end 
+                //modify by liukun at 2010-6-17　end 
                 case 5://阴阳性病人数统计
                     this.queryAbnormal = this.queryDeptName;
                     break;

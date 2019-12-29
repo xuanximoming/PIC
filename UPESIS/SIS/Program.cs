@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Windows.Forms;
 using System.IO;
 using System.Threading;
-using SIS;
+using System.Windows.Forms;
 
 namespace SIS
 {
@@ -53,11 +50,14 @@ namespace SIS
         {
             try
             {
-                new SIS.FileOperator().DelBakImg(Application.StartupPath + "\\BCIMAGES", DateTime.Now.AddMonths(-1));
-                Directory.Delete(Application.StartupPath + "\\PacsTemp", true);
-                Directory.Delete(Application.StartupPath + "\\temp", true);
+                if (System.IO.Directory.Exists(Application.StartupPath + "\\BCIMAGES"))
+                    new SIS.FileOperator().DelBakImg(Application.StartupPath + "\\BCIMAGES", DateTime.Now.AddMonths(-1));
+                if (System.IO.Directory.Exists(Application.StartupPath + "\\PacsTemp"))
+                    Directory.Delete(Application.StartupPath + "\\PacsTemp", true);
+                if (System.IO.Directory.Exists(Application.StartupPath + "\\temp"))
+                    Directory.Delete(Application.StartupPath + "\\temp", true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("É¾³ýÁÙÊ±ÎÄ¼þÊ§°Ü!");
             }

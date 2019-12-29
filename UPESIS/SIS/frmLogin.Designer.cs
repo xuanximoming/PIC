@@ -82,7 +82,7 @@
             // 
             this.lbHospitalName.AutoSize = true;
             this.lbHospitalName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbHospitalName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbHospitalName.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbHospitalName.ForeColor = System.Drawing.Color.Indigo;
             this.lbHospitalName.Location = new System.Drawing.Point(0, 0);
             this.lbHospitalName.Name = "lbHospitalName";
@@ -94,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("华文行楷", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("STXingkai", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label1.Location = new System.Drawing.Point(69, 207);
             this.label1.Name = "label1";
@@ -115,7 +115,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(3, 19);
             this.label2.Name = "label2";
@@ -151,7 +151,7 @@
             // 
             this.l_Notice.AutoSize = true;
             this.l_Notice.BackColor = System.Drawing.Color.Transparent;
-            this.l_Notice.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_Notice.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_Notice.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.l_Notice.Location = new System.Drawing.Point(200, 20);
             this.l_Notice.Name = "l_Notice";
@@ -182,7 +182,7 @@
             // l_ImgEquipment
             // 
             this.l_ImgEquipment.AutoSize = true;
-            this.l_ImgEquipment.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_ImgEquipment.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_ImgEquipment.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.l_ImgEquipment.Location = new System.Drawing.Point(3, 77);
             this.l_ImgEquipment.Name = "l_ImgEquipment";
@@ -193,7 +193,7 @@
             // l_Pwd
             // 
             this.l_Pwd.AutoSize = true;
-            this.l_Pwd.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_Pwd.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_Pwd.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.l_Pwd.Location = new System.Drawing.Point(3, 48);
             this.l_Pwd.Name = "l_Pwd";
@@ -204,7 +204,7 @@
             // btn_Login
             // 
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Login.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Login.Location = new System.Drawing.Point(15, 6);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(70, 28);
@@ -217,7 +217,7 @@
             // 
             this.btn_LoginCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_LoginCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LoginCancel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_LoginCancel.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_LoginCancel.Location = new System.Drawing.Point(100, 6);
             this.btn_LoginCancel.Name = "btn_LoginCancel";
             this.btn_LoginCancel.Size = new System.Drawing.Size(70, 28);
@@ -245,7 +245,7 @@
             this.btn_Exit.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Exit.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Exit.ButtonText = "退出";
-            this.btn_Exit.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Exit.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Exit.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageSize = new System.Drawing.Size(18, 18);
@@ -263,7 +263,7 @@
             this.btn_LockSetting.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_LockSetting.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_LockSetting.ButtonText = "设置";
-            this.btn_LockSetting.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_LockSetting.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_LockSetting.ForeColor = System.Drawing.Color.Indigo;
             this.btn_LockSetting.Image = ((System.Drawing.Image)(resources.GetObject("btn_LockSetting.Image")));
             this.btn_LockSetting.ImageSize = new System.Drawing.Size(18, 18);
@@ -281,7 +281,7 @@
             this.btn_UnLock.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_UnLock.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_UnLock.ButtonText = "解锁";
-            this.btn_UnLock.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_UnLock.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_UnLock.ForeColor = System.Drawing.Color.Indigo;
             this.btn_UnLock.Image = ((System.Drawing.Image)(resources.GetObject("btn_UnLock.Image")));
             this.btn_UnLock.ImageSize = new System.Drawing.Size(18, 18);
@@ -322,7 +322,7 @@
             this.btn_Cancel.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Cancel.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Cancel.ButtonText = "取消";
-            this.btn_Cancel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Cancel.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.Image")));
             this.btn_Cancel.ImageSize = new System.Drawing.Size(20, 20);
@@ -340,7 +340,7 @@
             this.btn_Save.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Save.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Save.ButtonText = "保存";
-            this.btn_Save.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Save.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Save.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Save.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.Image")));
             this.btn_Save.ImageSize = new System.Drawing.Size(20, 20);
@@ -354,7 +354,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 9F);
+            this.label4.Font = new System.Drawing.Font("SimSun", 9F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(337, 68);
             this.label4.Name = "label4";
@@ -365,7 +365,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 9F);
+            this.label3.Font = new System.Drawing.Font("SimSun", 9F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(170, 68);
             this.label3.Name = "label3";
@@ -402,7 +402,7 @@
             this.btn_Cancel2.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Cancel2.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Cancel2.ButtonText = "取消";
-            this.btn_Cancel2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Cancel2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Cancel2.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Cancel2.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancel2.Image")));
             this.btn_Cancel2.ImageSize = new System.Drawing.Size(18, 18);
@@ -420,7 +420,7 @@
             this.btn_Ok.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Ok.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Ok.ButtonText = "确定";
-            this.btn_Ok.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Ok.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Ok.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Ok.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ok.Image")));
             this.btn_Ok.ImageSize = new System.Drawing.Size(18, 18);
@@ -448,7 +448,7 @@
             this.btn_Close.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Close.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Close.ButtonText = "";
-            this.btn_Close.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Close.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Close.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Close.Image = ((System.Drawing.Image)(resources.GetObject("btn_Close.Image")));
             this.btn_Close.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -465,7 +465,7 @@
             // 
             this.llb_ChangePwd.AutoSize = true;
             this.llb_ChangePwd.BackColor = System.Drawing.Color.Transparent;
-            this.llb_ChangePwd.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.llb_ChangePwd.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.llb_ChangePwd.Location = new System.Drawing.Point(410, 268);
             this.llb_ChangePwd.Name = "llb_ChangePwd";
             this.llb_ChangePwd.Size = new System.Drawing.Size(63, 14);
@@ -495,7 +495,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
-            this.Opacity = 0.9;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Shown += new System.EventHandler(this.frmLogin_Shown);

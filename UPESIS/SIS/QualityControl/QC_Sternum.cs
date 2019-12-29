@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
+﻿using CrystalDecisions.CrystalReports.Engine;
 using PACS_Model;
 using SIS_BLL;
-using CrystalDecisions.CrystalReports.Engine;
-using System.Data.OracleClient;
+using System;
+using System.Collections;
+using System.Data;
+using System.Windows.Forms;
 
 
 namespace SIS.QualityControl
@@ -76,7 +70,7 @@ namespace SIS.QualityControl
                 }
                 else if (mqcInfor.Type.ToString() == "1")
                 {
-                    DataTable dttpL =bdgImg.GetList("EXAM_ACCESSION_NUM='" + mqcInfor.EXAM_ACCESSION_NUM + "'");
+                    DataTable dttpL = bdgImg.GetList("EXAM_ACCESSION_NUM='" + mqcInfor.EXAM_ACCESSION_NUM + "'");
                     if (dttpL.Rows.Count > 0)
                     {
                         if (i == 0 && FirstTopType == -1)
@@ -112,7 +106,7 @@ namespace SIS.QualityControl
             return true;
         }
 
-        private void FillDataTableFromTable(DataRow dttp,int flag)
+        private void FillDataTableFromTable(DataRow dttp, int flag)
         {
             if (flag == 0)
             {
@@ -174,7 +168,7 @@ namespace SIS.QualityControl
             }
         }
 
-        private void FillDataTableFromClass(ref DataRow dr,MQcInformation minfor, int flag)
+        private void FillDataTableFromClass(ref DataRow dr, MQcInformation minfor, int flag)
         {
             if (flag == 0)
             {
@@ -305,8 +299,8 @@ namespace SIS.QualityControl
 
             lv_Sternum.Focus();
             lv_Sternum.TopItem.Selected = true;
-            lv_Sternum.TopItem.Focused = true;            
-            cmb_Style.SelectedIndex = FirstTopType;                        
+            lv_Sternum.TopItem.Focused = true;
+            cmb_Style.SelectedIndex = FirstTopType;
         }
 
         private void cmb_Style_SelectedIndexChanged(object sender, EventArgs e)
@@ -905,18 +899,18 @@ namespace SIS.QualityControl
             int DISTINCTION_1 = 0, DISTINCTION_2 = 0, DISTINCTION_3 = 0;
             decimal Total_Score_All = 0;
 
-            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1,ref DISTINCTION_2,ref DISTINCTION_3,ref Total_Score_All );
+            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1, ref DISTINCTION_2, ref DISTINCTION_3, ref Total_Score_All);
             this.rptDocument.SetDataSource(dtSernum);
 
             SIS_Function.ApiIni AI = new SIS_Function.ApiIni(Application.StartupPath + @"\Settings.ini");
             string Hosiptal_Name = AI.IniReadValue("bcOffice", "HospitalName");
-            this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
-            this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
-            this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
-            this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
-            this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
-            this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
-            this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
+            //this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
+            //this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
+            //this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
+            //this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
+            //this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
+            //this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
+            //this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
             this.crv_Sternum.ReportSource = this.rptDocument;
             this.crv_Sternum.Controls[0].Controls[0].Controls[0].Text = "胸部正位片";
         }

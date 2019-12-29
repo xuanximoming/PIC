@@ -949,7 +949,7 @@ namespace SIS
                     }
                 }
 
-                foreach (Word.Shape shape in document.Shapes)
+                foreach (Microsoft.Office.Interop.Word.Shape shape in document.Shapes)
                 {
                     if (shape.Type == MsoShapeType.msoOLEControlObject)
                     {

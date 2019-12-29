@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
+﻿using CrystalDecisions.CrystalReports.Engine;
 using PACS_Model;
 using SIS_BLL;
-using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Collections;
+using System.Data;
+using System.Windows.Forms;
 
 namespace SIS.QualityControl
 {
@@ -214,15 +209,15 @@ namespace SIS.QualityControl
                 dr["PATIENT_SEX"] = minfor.SEX;
                 dr["STUDY_DATE_TIME"] = minfor.STUDY_DATE_TIME;
 
-                dr["IVP_FILM_POSTURE_PLACE"]= (decimal)mdtImg.IVP_FILM_POSTURE_PLACE;
-                dr["IVP_PROJECTION_CENTRAGE"]= (decimal)mdtImg.IVP_PROJECTION_CENTRAGE;
-                dr["IVP_PHOTOGRAPHS_ENOUGH"]= (decimal)mdtImg.IVP_PHOTOGRAPHS_ENOUGH;
-                dr["EXPOSURE_DOSE"]= (decimal)mdtImg.EXPOSURE_DOSE;
-                dr["IVP_RESOLUTION"]= (decimal)mdtImg.IVP_RESOLUTION;
-                dr["IVP_HIST_CONTRAST"]= (decimal)mdtImg.IVP_HIST_CONTRAST;
-                dr["FLAG_CONTENT"]= (decimal)mdtImg.FLAG_CONTENT;
-                dr["FLAG_PLACE_ARRANGE"]= (decimal)mdtImg.FLAG_PLACE_ARRANGE;
-                dr["IVP_DEVICE_SHADOW"]= (decimal)mdtImg.IVP_DEVICE_SHADOW;
+                dr["IVP_FILM_POSTURE_PLACE"] = (decimal)mdtImg.IVP_FILM_POSTURE_PLACE;
+                dr["IVP_PROJECTION_CENTRAGE"] = (decimal)mdtImg.IVP_PROJECTION_CENTRAGE;
+                dr["IVP_PHOTOGRAPHS_ENOUGH"] = (decimal)mdtImg.IVP_PHOTOGRAPHS_ENOUGH;
+                dr["EXPOSURE_DOSE"] = (decimal)mdtImg.EXPOSURE_DOSE;
+                dr["IVP_RESOLUTION"] = (decimal)mdtImg.IVP_RESOLUTION;
+                dr["IVP_HIST_CONTRAST"] = (decimal)mdtImg.IVP_HIST_CONTRAST;
+                dr["FLAG_CONTENT"] = (decimal)mdtImg.FLAG_CONTENT;
+                dr["FLAG_PLACE_ARRANGE"] = (decimal)mdtImg.FLAG_PLACE_ARRANGE;
+                dr["IVP_DEVICE_SHADOW"] = (decimal)mdtImg.IVP_DEVICE_SHADOW;
 
                 dr["EXTERNA_SHADOW"] = (decimal)mdtImg.EXTERNA_SHADOW;
                 dr["TOTAL_SCORE"] = (decimal)mdtImg.TOTAL_SCORE;
@@ -261,7 +256,7 @@ namespace SIS.QualityControl
                 N_FINGER_MARK.Value = (decimal)nDr["FINGER_MARK"];
                 N_LIGHT_LEAK.Value = (decimal)nDr["LIGHT_LEAK"];
                 N_STATIC_SHADOW.Value = (decimal)nDr["STATIC_SHADOW"];
-              
+
                 nud_EXTERNA_SHADOW.Value = (decimal)nDr["EXTERNA_SHADOW"];
                 txt_TOTAL_SCORE.Text = nDr["TOTAL_SCORE"].ToString();
                 cmb_DISTINCTION.SelectedIndex = Convert.ToInt32(nDr["DISTINCTION"]) - 1;
@@ -286,7 +281,7 @@ namespace SIS.QualityControl
 
                 nud_EXTERNA_SHADOW.Value = (decimal)nDr1["EXTERNA_SHADOW"];
                 txt_TOTAL_SCORE.Text = nDr1["TOTAL_SCORE"].ToString();
-                cmb_DISTINCTION.SelectedIndex =Convert.ToInt32(nDr1["DISTINCTION"]) - 1;
+                cmb_DISTINCTION.SelectedIndex = Convert.ToInt32(nDr1["DISTINCTION"]) - 1;
             }
         }
 
@@ -1008,18 +1003,18 @@ namespace SIS.QualityControl
             int DISTINCTION_1 = 0, DISTINCTION_2 = 0, DISTINCTION_3 = 0;
             decimal Total_Score_All = 0;
 
-            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1 ,ref DISTINCTION_2,ref DISTINCTION_3,ref Total_Score_All);
+            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1, ref DISTINCTION_2, ref DISTINCTION_3, ref Total_Score_All);
             this.rptDocument.SetDataSource(dtSernum);
 
             SIS_Function.ApiIni AI = new SIS_Function.ApiIni(Application.StartupPath + @"\Settings.ini");
             string Hosiptal_Name = AI.IniReadValue("bcOffice", "HospitalName");
-            this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
-            this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
-            this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
-            this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
-            this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
-            this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
-            this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
+            //this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
+            //this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
+            //this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
+            //this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
+            //this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
+            //this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
+            //this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
             this.crv_Sternum.ReportSource = this.rptDocument;
             this.crv_Sternum.Controls[0].Controls[0].Controls[0].Text = "静脉肾盂造影";
         }
@@ -1042,7 +1037,7 @@ namespace SIS.QualityControl
             this.crv_Sternum.PrintReport();
         }
 
-       
+
 
 
 
