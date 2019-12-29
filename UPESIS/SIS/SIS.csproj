@@ -116,9 +116,10 @@
       <HintPath>..\Ocx&amp;Dll\Interop.Microsoft.Office.Interop.Word.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Interop.MSCommLib">
-      <HintPath>..\Ocx&amp;Dll\Interop.MSCommLib.dll</HintPath>
+    <Reference Include="Interop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Ocx&amp;Dll\Interop.MSCommLib.dll</HintPath>
     </Reference>
     <Reference Include="Interop.NEROLib, Version=1.4.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>

@@ -29,16 +29,16 @@ namespace ILL
         {
             cp.DBType = SisType;
             cp.Server = SisServer;
-            cp.Uid = SisUid; 
+            cp.Uid = SisUid;
             cp.Pwd = SisPwd;
-            cp.Database = SisDatabase; 
+            cp.Database = SisDatabase;
             return cp;
         }
 
         //实例化HIS数据库连接字符串的字段
         public static ConParam GetHisConnStr()
         {
-            cp.DBType = hisType; 
+            cp.DBType = hisType;
             cp.Server = hisServer;
             cp.Uid = hisUid;
             cp.Pwd = hisPwd;
@@ -51,7 +51,7 @@ namespace ILL
         {
             cp.DBType = PacsType;
             cp.Server = PacsServer;
-            cp.Uid = PacsUid; 
+            cp.Uid = PacsUid;
             cp.Pwd = PacsPwd;
             cp.Database = PacsDatabase;
             return cp;
@@ -89,13 +89,13 @@ namespace ILL
         public static string PacsPwd = ini.IniReadValue("PacsConnectionString", "Pwd");			// HIS数据库密码
         public static string PacsServer = ini.IniReadValue("PacsConnectionString", "Server");    //
         public static string PacsDriver = ini.IniReadValue("PacsConnectionString", "Driver");
-        
+
         //systemsetting 系统设置读取
         public static string ExamClass = ini.IniReadValue("SYSTEMSETTING", "EXAM_CLASS");
         public static string Modality = ini.IniReadValue("SYSTEMSETTING", "Modality");
         //public static string IsMutex = ini.IniReadValue("SYSTEMSETTING", "isMutex");
         public static string ModalityName = ini.IniReadValue("SYSTEMSETTING", "ModalityName");
-        public static string DALAndModel = ini.IniReadValue("SYSTEMSETTING", "DALAndModel").ToUpper();                                //DAL和Model层命名空间
+        public static string DALAndModel = ini.IniReadValue("SYSTEMSETTING", "DALAndModel").ToUpper();                            //DAL和Model层命名空间
         public static string Group = ini.IniReadValue("SYSTEMSETTING", "Group");
         //public static string Model = ini.IniReadValue("SYSTEMSETTING", "");                                               //层命名空间
         public static string ExamDeptCode = ini.IniReadValue("SYSTEMSETTING", "ExamDeptCode");                              //系统检查科室代码
@@ -110,8 +110,8 @@ namespace ILL
         public static bool QueryGroup = bool.Parse(ini.IniReadValue("SYSTEMSETTING", "QueryGroup"));                       //快速查询是否默认查询当前诊室
         public static string ChargeItemClass = ini.IniReadValue("SYSTEMSETTING", "ChargeItemClass");                       //该科室对应的价表项目分类
 
-       // public static string ExamSubClass = ini.IniReadValue("SYSTEMSETTING", "EXAM_SUB_CLASS");
-       // public static string PatientSourceCode = ini.IniReadValue("SYSTEMSETTING", "PatientSourceCode");
+        // public static string ExamSubClass = ini.IniReadValue("SYSTEMSETTING", "EXAM_SUB_CLASS");
+        // public static string PatientSourceCode = ini.IniReadValue("SYSTEMSETTING", "PatientSourceCode");
 
         //SisConnectionString SIS连接设置字段读取
         public static string SisOdbcMode = ini.IniReadValue("SisConnectionString", "OdbcMode");
@@ -151,8 +151,8 @@ namespace ILL
         //public static bool RM_ShowQueryStatus = bool.Parse(ini.IniReadValue("RegisterMode", "ShowQueryStatus"));      // 显示恢复状态按钮 0:否;1:是         
         public static bool RM_CheckReportStatus = bool.Parse(ini.IniReadValue("RegisterMode", "CheckReportStatus"));  // 验证报告状态 0:否;1:是
         public static bool RM_IsSelectOutpDesc = bool.Parse(ini.IniReadValue("RegisterMode", "IsSelectOutpDesc"));	  // 查询门诊收费资料提取病人信息 false:否;true:是
-       // public static bool RM_IsFastRegEmpId = bool.Parse(ini.IniReadValue("RegisterMode", "IsFastRegEmpId"));	      // 是否启动无ID快速登记 false:否;true:是
-       // public static string RM_FastRegDep = ini.IniReadValue("RegisterMode", "FastRegDep");			              // 无ID快速登记的申请科室
+        // public static bool RM_IsFastRegEmpId = bool.Parse(ini.IniReadValue("RegisterMode", "IsFastRegEmpId"));	      // 是否启动无ID快速登记 false:否;true:是
+        // public static string RM_FastRegDep = ini.IniReadValue("RegisterMode", "FastRegDep");			              // 无ID快速登记的申请科室
         public static bool RM_ExamItemSort = bool.Parse(ini.IniReadValue("RegisterMode", "ExamItemSort"));            // 是否启动诊疗项目智能排序 false:否;true:是
         public static int RM_SortDays = int.Parse(ini.IniReadValue("RegisterMode", "SortDays"));                      // 智能排序的统计天数
         public static string RM_CheckField = ini.IniReadValue("RegisterMode", "CheckField");                          // 需验证是否录入的字段
@@ -177,7 +177,7 @@ namespace ILL
         public static int IMS_Quality = int.Parse(ini.IniReadValue("ImgCardSetting", "Quality"));		              // 采集质量
         public static bool IMS_IsUseRect = bool.Parse(ini.IniReadValue("ImgCardSetting", "IsUseRect"));               // 是否限定采集区域
         public static string[] IMS_Rect = ini.IniReadValue("ImgCardSetting", "Rect").Split(',');                      // 采集区域:Left,Top,Width,Height
-        
+
         //CommSetting    COMM设置读取
         public static bool COS_IsUse = bool.Parse(ini.IniReadValue("CommSetting", "IsUse"));	                       // 是否使用串口
         public static string COS_CommMode = ini.IniReadValue("CommSetting", "CommMode");		                       // 串口采集方式：0：脚踏；1：按钮
@@ -186,7 +186,7 @@ namespace ILL
         public static int COS_DataBits = int.Parse(ini.IniReadValue("CommSetting", "DataBits"));	                   // 数据位
         public static bool COS_IsPerlinNoise = bool.Parse(ini.IniReadValue("CommSetting", "IsPerlinNoise"));	       // 是否去噪
         public static string COS_ButtonCatch = ini.IniReadValue("CommSetting", "ButtonCatch");	                       // 按钮采集对应的顺序：0 单帧采集；1 动态采集；2 后台单帧； 3 后台动态；
-       
+
         //CameraSetting     摄像机设置读取
         public static string CS_CameraMode = ini.IniReadValue("CameraSetting", "CameraMode").ToUpper();	              //摄像头捕捉类
 
@@ -213,7 +213,7 @@ namespace ILL
         public static string RS_HistoryRptLocation = ini.IniReadValue("ReportSetting", "HistoryRptLocation");                 //历史报告的窗口位置与大小
         public static int DefaultAbnormal = int.Parse(ini.IniReadValue("ReportSetting", "DefaultABNORMAL"));                  //默认阴阳性
         public static string ReportDateFormat = ini.IniReadValue("ReportSetting", "ReportDateFormat");                        //报告时间日期格式
-        
+
         //[ListCellColor]     LCC设置读取
         public static string LCC_ChargeType = ini.IniReadValue("ListCellColor", "ChargeType");                                //检查列表的各种收费类别对应的颜色
         public static string LCC_PatientSource = ini.IniReadValue("ListCellColor", "PatientSource");                          //检查列表的各种病人来源对应的颜色
@@ -484,7 +484,7 @@ namespace ILL
         }
         public static string ReSetLM_LocalIdMax()
         {
-           return ini.IniReadValue("LocalIdMode", "LocalIdMax");
+            return ini.IniReadValue("LocalIdMode", "LocalIdMax");
         }
         public static void SetLM_LocalIdYear(int value)
         {

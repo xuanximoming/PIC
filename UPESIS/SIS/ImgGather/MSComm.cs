@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ILL;
+using System;
 using System.Text;
-using ILL;
 
 namespace SIS.ImgGather
 {
@@ -15,7 +14,7 @@ namespace SIS.ImgGather
         private char comStrContent = 'A';
         private bool isComConn = false;
         private bool isComDown = false;
-        public string CommMode=GetConfig.COS_CommMode;  //0:脚踏开关; 1:按钮
+        public string CommMode = GetConfig.COS_CommMode;  //0:脚踏开关; 1:按钮
         public string Settings = "9600,N,8,1";
         public int CommPort = 1;
         public delegate void OnCommGather(string GatherMode);
@@ -78,7 +77,7 @@ namespace SIS.ImgGather
                             break;
                     }
                     break;
-                default :
+                default:
                     break;
             }
         }

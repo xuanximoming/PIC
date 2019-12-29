@@ -1248,7 +1248,7 @@
             this.crv_Sternum.ShowRefreshButton = false;
             this.crv_Sternum.Size = new System.Drawing.Size(972, 616);
             this.crv_Sternum.TabIndex = 181;
-            this.crv_Sternum.ViewTimeSelectionFormula = "";
+            //this.crv_Sternum.ViewTimeSelectionFormula = "";
             this.crv_Sternum.Visible = false;
             // 
             // txt_TOTAL_SCORE

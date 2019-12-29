@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
+﻿using CrystalDecisions.CrystalReports.Engine;
 using PACS_Model;
 using SIS_BLL;
-using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Collections;
+using System.Data;
+using System.Windows.Forms;
 
 namespace SIS.QualityControl
 {
@@ -175,7 +170,7 @@ namespace SIS.QualityControl
         }
 
         //使用默认值填充datatable
-        private void FillDataTableFromClass(ref DataRow dr,MQcInformation minfor, int flag)
+        private void FillDataTableFromClass(ref DataRow dr, MQcInformation minfor, int flag)
         {
             if (flag == 0)
             {
@@ -892,18 +887,18 @@ namespace SIS.QualityControl
             int DISTINCTION_1 = 0, DISTINCTION_2 = 0, DISTINCTION_3 = 0;
             decimal Total_Score_All = 0;
 
-            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1,ref DISTINCTION_2,ref DISTINCTION_3,ref Total_Score_All);
+            DataTable dtSernum = MeregeDataTableData(ref DISTINCTION_1, ref DISTINCTION_2, ref DISTINCTION_3, ref Total_Score_All);
             this.rptDocument.SetDataSource(dtSernum);
 
             SIS_Function.ApiIni AI = new SIS_Function.ApiIni(Application.StartupPath + @"\Settings.ini");
             string Hosiptal_Name = AI.IniReadValue("bcOffice", "HospitalName");
-            this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
-            this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
-            this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
-            this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
-            this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
-            this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
-            this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
+            //this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
+            //this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
+            //this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
+            //this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
+            //this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
+            //this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
+            //this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
             this.crv_Sternum.ReportSource = this.rptDocument;
             this.crv_Sternum.Controls[0].Controls[0].Controls[0].Text = "膝关节";
         }
@@ -973,7 +968,7 @@ namespace SIS.QualityControl
                 nDr["EXTERNA_SHADOW"] += dr["EXTERNA_SHADOW"].ToString().PadRight(6, ' ');
                 nDr["TOTAL_SCORE"] += dr["TOTAL_SCORE"].ToString().PadRight(6, ' ');
                 nDr["DISTINCTION"] += dr["DISTINCTION"].ToString().PadRight(6, ' ');
-                
+
                 nDr["D_EXPOSURE_DOSE"] += s.PadRight(6, ' ');
                 nDr["D_FLAG_CONTENT"] += s.PadRight(6, ' ');
                 nDr["D_FLAG_PLACE_ARRANGE"] += s.PadRight(6, ' ');

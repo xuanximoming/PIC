@@ -626,7 +626,7 @@
             this.crv_Sternum.ShowRefreshButton = false;
             this.crv_Sternum.Size = new System.Drawing.Size(972, 616);
             this.crv_Sternum.TabIndex = 160;
-            this.crv_Sternum.ViewTimeSelectionFormula = "";
+            //this.crv_Sternum.ViewTimeSelectionFormula = "";
             this.crv_Sternum.Visible = false;
             // 
             // gb_Film

@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using SIS.ImgGather;
+﻿using BaseControls.Docking;
 using ILL;
-using SIS_Function;
-using BaseControls.Docking;
-using System.IO;
-using System.Media;
+using SIS.ImgGather;
+using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace SIS
 {
     public partial class frmImageGather : Form
     {
         [DllImport("kernel32.dll")]
-        public static extern int Beep(int hz, int time);   
+        public static extern int Beep(int hz, int time);
         public bool isBack = true;
         private Gather gather;
         private frmBackImages backImages;
@@ -40,7 +33,7 @@ namespace SIS
             m_deserializeDockContent = new DeserializeDockContent(GetContentFromPersistString);
             this.msComm = new MSComm(this.axMSComm1);
             this.msComm.onCommGather = new SIS.ImgGather.MSComm.OnCommGather(GatherMultimedia);
-           // UsbjoyStick.joySetCapture(this.Handle, UsbjoyStick.JOYSTICKID1, 100, false);//测试USE手柄
+            // UsbjoyStick.joySetCapture(this.Handle, UsbjoyStick.JOYSTICKID1, 100, false);//测试USE手柄
             if (gather.OpenCard())
             {
                 gather.initCard();
@@ -223,7 +216,7 @@ namespace SIS
                         this.preferImages.LoadImages();
                         int i = Beep(1000, 500);
                         //System.Media.SystemSounds.Asterisk.Play();
-                        
+
                     }
                 }
                 if (frmMainForm.GatherOrRpt == 0 && this.Visible)
@@ -232,11 +225,11 @@ namespace SIS
                     this.preferImages.AddPreferImage(img);
                     this.preferImages.Activate();
                     int i = Beep(1000, 500);
-                    
+
                     //System.Media.SystemSounds.Asterisk.Play();
-                   
+
                 }
-               
+
             }
             catch { }
         }
@@ -263,7 +256,7 @@ namespace SIS
 
         private void BackStaticCatch()
         {
-             if (this.ptb_Gather.Image == null)
+            if (this.ptb_Gather.Image == null)
                 return;
             try
             {

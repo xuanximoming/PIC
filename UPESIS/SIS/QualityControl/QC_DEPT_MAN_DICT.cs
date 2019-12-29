@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
+﻿using CrystalDecisions.CrystalReports.Engine;
 using PACS_Model;
 using SIS_BLL;
-using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Data;
+using System.Windows.Forms;
 
 namespace SIS.QualityControl
 {
@@ -268,11 +262,11 @@ namespace SIS.QualityControl
 
             SIS_Function.ApiIni AI = new SIS_Function.ApiIni(Application.StartupPath + @"\Settings.ini");
             string Hosiptal_Name = AI.IniReadValue("bcOffice", "HospitalName");
-            this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
+            //this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
 
-            this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
-            this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
-            this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
+            //this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
+            //this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
+            //this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
             this.crv_Sternum.ReportSource = this.rptDocument;
             this.crv_Sternum.Controls[0].Controls[0].Controls[0].Text = "上消化道钡餐造影";
         }

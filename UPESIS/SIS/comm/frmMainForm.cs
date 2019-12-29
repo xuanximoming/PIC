@@ -1,20 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Reflection;
-using System.Runtime.Remoting;
-using System.IO;
+using BaseControls.Docking;
+using ILL;
 using SIS_BLL;
 using SIS_Model;
-using SIS_DAL;
-using SIS.Function;
-using SIS;
-using ILL;
-using BaseControls.Docking;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace SIS
 {
@@ -49,7 +42,7 @@ namespace SIS
             InitializeComponent();
             myMainForm = this;
         }
-        
+
         /// <summary>
         /// 主界面构造函数1，根据配置文件的设置，初始化可停靠窗体
         /// </summary>
@@ -148,13 +141,13 @@ namespace SIS
             else
             {
                 dockPanel.SaveAsXml(configFile);
-                switch(GetConfig.DALAndModel)
+                switch (GetConfig.DALAndModel)
                 {
                     case "SIS":
-                        if(Directory.Exists(Application.StartupPath+"\\SimpleViewer\\Reledatabase\\images"))
+                        if (Directory.Exists(Application.StartupPath + "\\SimpleViewer\\Reledatabase\\images"))
                             Directory.Delete(Application.StartupPath + "\\SimpleViewer\\Reledatabase\\images", true);
                         GetConfig.SetUG_DbUser(((SIS_Model.MUser)frmMainForm.iUser).DOCTOR_ID);
-                        break ;
+                        break;
                     case "PACS":
                         GetConfig.SetUG_DbUser(((PACS_Model.MUser)frmMainForm.iUser).DB_USER);
                         break;
@@ -189,14 +182,14 @@ namespace SIS
                 Application.Exit();
             }
             catch
-            { 
-                Environment.Exit(0); 
+            {
+                Environment.Exit(0);
             }
-        
+
         }
         private void timer_Close_Tick(object sender, EventArgs e)
         {
-            Environment.Exit(0); 
+            Environment.Exit(0);
         }
 
         /// <summary>
@@ -220,7 +213,7 @@ namespace SIS
                 {
                     case "1":
                         dt = BSysFun.GetList(" MODEL_CLASS='1' AND UP_MODEL_ID=0 AND MODEL_NAME ='检查登记' ORDER BY SORT_FLAG ");
-                        break ;
+                        break;
                     case "2":
                         dt = BSysFun.GetList(" MODEL_CLASS='1' AND UP_MODEL_ID=0 ORDER BY SORT_FLAG ");
                         break;
@@ -372,7 +365,8 @@ namespace SIS
         /// <returns></returns>
         private Form CreateForm(string FormName, string FormPlace)
         {
-            Form FormFun = (Form)Activator.CreateInstance(Type.GetType(FormPlace));    //否则创建 
+            Type ty = Type.GetType(FormPlace);
+            Form FormFun = (Form)Activator.CreateInstance(ty);    //否则创建 
             FormFun.TopLevel = false;
             FormFun.FormBorderStyle = FormBorderStyle.None;
             FormFun.Text = FormName;
@@ -399,7 +393,7 @@ namespace SIS
         private void btn_Logout_Click(object sender, EventArgs e)
         {
             this.isLogout = true;
-            
+
             Application.Restart();
         }
 

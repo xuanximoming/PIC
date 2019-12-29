@@ -425,7 +425,7 @@
             this.ReportViewer.SelectionFormula = "";
             this.ReportViewer.Size = new System.Drawing.Size(827, 746);
             this.ReportViewer.TabIndex = 0;
-            this.ReportViewer.ViewTimeSelectionFormula = "";
+            //this.ReportViewer.ViewTimeSelectionFormula = "";
             // 
             // frmStat
             // 

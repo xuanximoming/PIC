@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
+﻿using CrystalDecisions.CrystalReports.Engine;
 using PACS_Model;
 using SIS_BLL;
-using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Collections;
+using System.Data;
+using System.Windows.Forms;
 
 namespace SIS.QualityControl
 {
@@ -94,7 +89,7 @@ namespace SIS.QualityControl
             return true;
         }
 
-        private void FillDataTableFromTable(DataRow dttp,int flag)
+        private void FillDataTableFromTable(DataRow dttp, int flag)
         {
             DataRow dr = dtCT.NewRow();
             dr["EXAM_ACCESSION_NUM"] = dttp["EXAM_ACCESSION_NUM"];
@@ -313,7 +308,7 @@ namespace SIS.QualityControl
             lv_Sternum.Focus();
             lv_Sternum.TopItem.Selected = true;
             lv_Sternum.TopItem.Focused = true;
-            cmb_Style.SelectedIndex = FirstTopType;    
+            cmb_Style.SelectedIndex = FirstTopType;
         }
 
         private void cmb_Style_SelectedIndexChanged(object sender, EventArgs e)
@@ -353,7 +348,7 @@ namespace SIS.QualityControl
             DataRow dr = dtCT.Rows.Find(lv_Sternum.Items[lv_Sternum.SelectedItems[0].Index].SubItems["EXAM_ACCESSION_NUM"].Text);
             if (dr != null)
             {
-                FillDataTableFromClass(ref dr, minf, cmb_Style.SelectedIndex );
+                FillDataTableFromClass(ref dr, minf, cmb_Style.SelectedIndex);
             }
             FillDefalutData(lv_Sternum.SelectedItems[0].Index, cmb_Style.SelectedIndex);
         }
@@ -405,7 +400,7 @@ namespace SIS.QualityControl
                     N_RESOLUTION.Value +
                     N_INF_CRITERION.Value + N_WL_WWIDTH.Value + N_FILM_FORMAT.Value + N_STATIC_SHADOW.Value + N_NICK.Value + N_WATER_MARK.Value + N_FINGER_MARK.Value + N_LIGHT_LEAK.Value +
                     nud_EXTERNA_BREATH_SHADOW.Value;
-                    
+
             txt_TOTAL_SCORE.Text = dcl.ToString();
         }
 
@@ -591,7 +586,7 @@ namespace SIS.QualityControl
 
         private void cmb_DISTINCTION_SelectedIndexChanged(object sender, EventArgs e)
         {
-                dtCT.Rows[NowRow]["DISTINCTION"] = cmb_DISTINCTION.SelectedIndex + 1;
+            dtCT.Rows[NowRow]["DISTINCTION"] = cmb_DISTINCTION.SelectedIndex + 1;
         }
 
         private void txt_TOTAL_SCORE_TextChanged(object sender, EventArgs e)
@@ -727,7 +722,7 @@ namespace SIS.QualityControl
             Hashtable ht = new Hashtable();
             for (int i = 0; i < dtCT.Rows.Count; i++)
             {
-                if (dtCT.Rows[i]["EXAM_ACCESSION_NUM"].ToString() == "" || dtCT.Rows[i]["PATIENT_LOCAL_ID"].ToString()=="") continue;
+                if (dtCT.Rows[i]["EXAM_ACCESSION_NUM"].ToString() == "" || dtCT.Rows[i]["PATIENT_LOCAL_ID"].ToString() == "") continue;
 
                 MQcCt mf = new MQcCt();
 
@@ -844,13 +839,13 @@ namespace SIS.QualityControl
 
             SIS_Function.ApiIni AI = new SIS_Function.ApiIni(Application.StartupPath + @"\Settings.ini");
             string Hosiptal_Name = AI.IniReadValue("bcOffice", "HospitalName");
-            this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
-            this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
-            this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
-            this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
-            this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
-            this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
-            this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
+            //this.rptDocument.SetParameterValue("Hospital_Name", Hosiptal_Name);
+            //this.rptDocument.SetParameterValue("DISTINCTION_1", DISTINCTION_1);
+            //this.rptDocument.SetParameterValue("DISTINCTION_2", DISTINCTION_2);
+            //this.rptDocument.SetParameterValue("DISTINCTION_3", DISTINCTION_3);
+            //this.rptDocument.SetParameterValue("Total_Score_All", Total_Score_All);
+            // this.rptDocument.SetParameterValue("Year", System.DateTime.Now.Year);
+            //this.rptDocument.SetParameterValue("Month", System.DateTime.Now.Month);
             this.crv_Sternum.ReportSource = this.rptDocument;
             this.crv_Sternum.Controls[0].Controls[0].Controls[0].Text = "CT";
         }

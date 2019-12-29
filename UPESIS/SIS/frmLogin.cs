@@ -1,21 +1,12 @@
-using System;
-using System.Text;
-using System.Data;
-using System.Drawing;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Configuration;
-using System.Runtime.InteropServices;
-using System.Xml;
-using System.IO;
-
-using SIS_BLL;
-using SIS_Model;
-using SIS.Function;
 using DALFactory;
 using ILL;
+using SIS_BLL;
+using SIS_Model;
+using System;
+using System.Data;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace SIS
 {
@@ -39,7 +30,7 @@ namespace SIS
         public const int SC_MOVE = 0xF010;
         public const int HTCAPTION = 0x0002;
 
-    
+
         /// <summary>
         /// 作用：双击登录图标，显示的登录界面初始化,构造函数1；不含参数。
         /// 思路：SIS：绑定检查设备；PACS：隐藏设备选择栏和标签，调整密码栏位置。
@@ -48,7 +39,7 @@ namespace SIS
         {
             InitializeComponent();
             this.lbHospitalName.Text = GetConfig.HospitalName;
-            this.user =Model.CreateMUser();
+            this.user = Model.CreateMUser();
             if (GetConfig.DALAndModel == "SIS")
                 BindCbMachineName();
             else
@@ -87,7 +78,7 @@ namespace SIS
         /// </summary>
         /// <param name="iuser"></param>
         /// <param name="ShowValidity"></param>
-        public frmLogin(IModel iuser,bool ShowValidity)
+        public frmLogin(IModel iuser, bool ShowValidity)
         {
             InitializeComponent();
             this.lbHospitalName.Text = GetConfig.HospitalName;
@@ -129,15 +120,15 @@ namespace SIS
         /// 思路：根据配置文件的检查科室代码，获取该科室所有设备；显示的为设备名，属性为设备ID。
         /// </summary>
         private void BindCbMachineName()
-        {    
+        {
             try
             {
                 dt = BImgEqu.GetList(" CLINIC_OFFICE_CODE = '" + GetConfig.ExamDeptCode + "'");
                 this.cmb_ImgEquipment.DataSource = dt;
                 this.cmb_ImgEquipment.DisplayMember = "IMG_EQUIPMENT_NAME";
-                this.cmb_ImgEquipment.ValueMember = "IMG_EQUIPMENT_ID";               
+                this.cmb_ImgEquipment.ValueMember = "IMG_EQUIPMENT_ID";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBoxEx.Show(ex.Message);
             }
@@ -165,15 +156,15 @@ namespace SIS
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
- 
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (CheckText())
             {
                 if (this.cmb_ImgEquipment.Text.ToString() != GetConfig.ImgEquipment)
                 {
-                   GetConfig.SetImgEquipment(this.cmb_ImgEquipment.Text.ToString());        //回写配置文件默认的机器名
-                   GetConfig.ImgEquipment = this.cmb_ImgEquipment.Text.ToString();
+                    GetConfig.SetImgEquipment(this.cmb_ImgEquipment.Text.ToString());        //回写配置文件默认的机器名
+                    GetConfig.ImgEquipment = this.cmb_ImgEquipment.Text.ToString();
                 }
                 if (CheckUser())
                 {
@@ -192,7 +183,7 @@ namespace SIS
                 }
                 else
                 {
-                    MessageBoxEx.Show("用户名、密码不正确，请重新输入！","提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBoxEx.Show("用户名、密码不正确，请重新输入！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.txt_Pwd.Text = "";
                     this.txt_Pwd.Focus();
                 }
@@ -205,17 +196,17 @@ namespace SIS
         /// </summary>
         /// <returns></returns>
 
-        private bool  CheckText()
+        private bool CheckText()
         {
             if (this.txt_DoctorId.Text == "")
             {
-                MessageBoxEx.Show("工号不能为空，请重新输入！","提示！",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBoxEx.Show("工号不能为空，请重新输入！", "提示！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txt_DoctorId.Focus();
                 return false;
             }
             if (this.txt_Pwd.Text == "")
             {
-                MessageBoxEx.Show("密码不能为空，请重新输入！","提示！",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBoxEx.Show("密码不能为空，请重新输入！", "提示！", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txt_Pwd.Focus();
                 return false;
             }
@@ -262,7 +253,7 @@ namespace SIS
         {
             this.txt_DoctorId.Text = "";
             this.txt_Pwd.Text = "";
-            
+
         }
 
         /// <summary>
