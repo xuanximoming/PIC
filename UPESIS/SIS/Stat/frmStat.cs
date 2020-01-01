@@ -30,7 +30,7 @@ namespace SIS
             InitializeComponent();
             try
             {
-                this.initData();	//初始化数据
+                initData();	//初始化数据
             }
             catch (Exception ex)
             {
