@@ -116,7 +116,7 @@ namespace SIS
             // 
             this.l_PatientId.AutoSize = true;
             this.l_PatientId.BackColor = System.Drawing.Color.Transparent;
-            this.l_PatientId.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_PatientId.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_PatientId.ForeColor = System.Drawing.Color.Cyan;
             this.l_PatientId.Location = new System.Drawing.Point(133, 16);
             this.l_PatientId.Name = "l_PatientId";
@@ -128,7 +128,7 @@ namespace SIS
             // 
             this.l_ExamAccessionNum.AutoSize = true;
             this.l_ExamAccessionNum.BackColor = System.Drawing.Color.Transparent;
-            this.l_ExamAccessionNum.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_ExamAccessionNum.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_ExamAccessionNum.ForeColor = System.Drawing.Color.Cyan;
             this.l_ExamAccessionNum.Location = new System.Drawing.Point(509, 16);
             this.l_ExamAccessionNum.Name = "l_ExamAccessionNum";
@@ -140,7 +140,7 @@ namespace SIS
             // 
             this.l_PatientSex.AutoSize = true;
             this.l_PatientSex.BackColor = System.Drawing.Color.Transparent;
-            this.l_PatientSex.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_PatientSex.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_PatientSex.ForeColor = System.Drawing.Color.Cyan;
             this.l_PatientSex.Location = new System.Drawing.Point(389, 16);
             this.l_PatientSex.Name = "l_PatientSex";
@@ -152,7 +152,7 @@ namespace SIS
             // 
             this.l_PatientName.AutoSize = true;
             this.l_PatientName.BackColor = System.Drawing.Color.Transparent;
-            this.l_PatientName.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l_PatientName.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.l_PatientName.ForeColor = System.Drawing.Color.Cyan;
             this.l_PatientName.Location = new System.Drawing.Point(270, 16);
             this.l_PatientName.Name = "l_PatientName";
@@ -164,7 +164,7 @@ namespace SIS
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(73, 16);
             this.label1.Name = "label1";
@@ -176,7 +176,7 @@ namespace SIS
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(438, 16);
             this.label5.Name = "label5";
@@ -188,7 +188,7 @@ namespace SIS
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(229, 16);
             this.label2.Name = "label2";
@@ -200,7 +200,7 @@ namespace SIS
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(346, 16);
             this.label3.Name = "label3";
@@ -230,7 +230,7 @@ namespace SIS
             this.btn_Settings.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Settings.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Settings.ButtonText = "设置";
-            this.btn_Settings.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Settings.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Settings.ForeColor = System.Drawing.Color.Black;
             this.btn_Settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_Settings.Image")));
             this.btn_Settings.ImageSize = new System.Drawing.Size(18, 18);
@@ -249,7 +249,7 @@ namespace SIS
             this.btn_Exit.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Exit.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Exit.ButtonText = "退出";
-            this.btn_Exit.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Exit.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Exit.ForeColor = System.Drawing.Color.Black;
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageSize = new System.Drawing.Size(18, 18);
@@ -278,7 +278,7 @@ namespace SIS
             this.btn_Logout.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Logout.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Logout.ButtonText = "注销";
-            this.btn_Logout.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Logout.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Logout.ForeColor = System.Drawing.Color.Black;
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
             this.btn_Logout.ImageSize = new System.Drawing.Size(18, 18);
@@ -297,7 +297,7 @@ namespace SIS
             this.btn_Lock.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_Lock.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_Lock.ButtonText = "锁定";
-            this.btn_Lock.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Lock.Font = new System.Drawing.Font("SimSun", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Lock.ForeColor = System.Drawing.Color.Black;
             this.btn_Lock.Image = ((System.Drawing.Image)(resources.GetObject("btn_Lock.Image")));
             this.btn_Lock.ImageSize = new System.Drawing.Size(18, 18);
@@ -328,7 +328,7 @@ namespace SIS
             this.tssl_SystemName.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
             this.tssl_SystemName.Name = "tssl_SystemName";
             this.tssl_SystemName.Size = new System.Drawing.Size(300, 17);
-            this.tssl_SystemName.Text = "广州宜诚影像信息系统";
+            this.tssl_SystemName.Text = "方软科技影像信息系统";
             // 
             // tssl_Version
             // 
@@ -373,8 +373,8 @@ namespace SIS
             this.dockPanel.Controls.Add(this.p_Sub);
             this.dockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockPanel.DockBackColor = System.Drawing.SystemColors.Control;
-            this.dockPanel.DockLeftPortion = 0.16;
-            this.dockPanel.DockRightPortion = 0.16;
+            this.dockPanel.DockLeftPortion = 0.16D;
+            this.dockPanel.DockRightPortion = 0.16D;
             this.dockPanel.Location = new System.Drawing.Point(0, 43);
             this.dockPanel.Name = "dockPanel";
             this.dockPanel.Size = new System.Drawing.Size(1020, 681);
@@ -457,11 +457,11 @@ namespace SIS
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainForm";
-            this.Text = "宜诚影像信息管理系统";
+            this.Text = "方软科技影像信息管理系统";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.frmMainForm_Activated);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.panTopLine.ResumeLayout(false);
             this.p_Patient.ResumeLayout(false);
             this.p_Patient.PerformLayout();

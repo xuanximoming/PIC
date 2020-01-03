@@ -168,6 +168,7 @@
             this.txt_Pwd.PasswordChar = '*';
             this.txt_Pwd.Size = new System.Drawing.Size(127, 21);
             this.txt_Pwd.TabIndex = 6;
+            this.txt_Pwd.Text = "1";
             this.txt_Pwd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbName_KeyDown);
             // 
             // txt_DoctorId
@@ -177,6 +178,7 @@
             this.txt_DoctorId.Name = "txt_DoctorId";
             this.txt_DoctorId.Size = new System.Drawing.Size(127, 21);
             this.txt_DoctorId.TabIndex = 5;
+            this.txt_DoctorId.Text = "0068";
             this.txt_DoctorId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbName_KeyDown);
             // 
             // l_ImgEquipment

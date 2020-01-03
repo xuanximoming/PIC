@@ -138,9 +138,9 @@
             // 
             // ptb_View
             // 
-            this.ptb_View.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptb_View.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ptb_View.BackColor = System.Drawing.Color.Black;
             this.ptb_View.Location = new System.Drawing.Point(11, 21);
             this.ptb_View.Name = "ptb_View";
@@ -152,9 +152,9 @@
             // 
             // ptb_Gather
             // 
-            this.ptb_Gather.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptb_Gather.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ptb_Gather.BackColor = System.Drawing.Color.Black;
             this.ptb_Gather.Location = new System.Drawing.Point(11, 19);
             this.ptb_Gather.Name = "ptb_Gather";
@@ -197,7 +197,7 @@
             this.btn_ShowView.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_ShowView.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_ShowView.ButtonText = "实时显示";
-            this.btn_ShowView.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_ShowView.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_ShowView.ForeColor = System.Drawing.Color.Indigo;
             this.btn_ShowView.Image = ((System.Drawing.Image)(resources.GetObject("btn_ShowView.Image")));
             this.btn_ShowView.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -216,7 +216,7 @@
             this.btn_CardSetting.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_CardSetting.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_CardSetting.ButtonText = "初始化卡";
-            this.btn_CardSetting.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_CardSetting.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_CardSetting.ForeColor = System.Drawing.Color.Indigo;
             this.btn_CardSetting.Image = ((System.Drawing.Image)(resources.GetObject("btn_CardSetting.Image")));
             this.btn_CardSetting.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -235,7 +235,7 @@
             this.btn_DinamicCatch.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_DinamicCatch.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_DinamicCatch.ButtonText = "动态采集";
-            this.btn_DinamicCatch.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_DinamicCatch.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_DinamicCatch.ForeColor = System.Drawing.Color.Indigo;
             this.btn_DinamicCatch.Image = ((System.Drawing.Image)(resources.GetObject("btn_DinamicCatch.Image")));
             this.btn_DinamicCatch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -255,7 +255,7 @@
             this.btn_StaticCatch.ButtonColor = System.Drawing.Color.SkyBlue;
             this.btn_StaticCatch.ButtonStyle = BaseControls.Buttons.VistaButton.Style.Flat;
             this.btn_StaticCatch.ButtonText = "静态采集";
-            this.btn_StaticCatch.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_StaticCatch.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_StaticCatch.ForeColor = System.Drawing.Color.Indigo;
             this.btn_StaticCatch.Image = ((System.Drawing.Image)(resources.GetObject("btn_StaticCatch.Image")));
             this.btn_StaticCatch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -294,7 +294,7 @@
             // btn_EditClincReport
             // 
             this.btn_EditClincReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_EditClincReport.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_EditClincReport.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_EditClincReport.Location = new System.Drawing.Point(15, 730);
             this.btn_EditClincReport.Name = "btn_EditClincReport";
             this.btn_EditClincReport.Size = new System.Drawing.Size(32, 32);
@@ -304,7 +304,7 @@
             // btn_Set
             // 
             this.btn_Set.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Set.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Set.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Set.Location = new System.Drawing.Point(15, 674);
             this.btn_Set.Name = "btn_Set";
             this.btn_Set.Size = new System.Drawing.Size(32, 32);
@@ -321,8 +321,8 @@
             this.Controls.Add(this.dockPanel);
             this.Name = "frmImageGather";
             this.Text = "ImgGather";
-            this.VisibleChanged += new System.EventHandler(this.ImgGather_VisibleChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmImageGather_FormClosing);
+            this.VisibleChanged += new System.EventHandler(this.ImgGather_VisibleChanged);
             this.dockPanel.ResumeLayout(false);
             this.p_Main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_View)).EndInit();
