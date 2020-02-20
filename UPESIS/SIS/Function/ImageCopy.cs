@@ -1,14 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using SIS_Model;
-using System.IO;
-using System.Data;
-using System.Windows.Forms;
-using SIS_Function;
-using System.Collections;
 using ILL;
 using SIS_BLL;
+using SIS_Function;
+using SIS_Model;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+using System.Windows.Forms;
 
 namespace SIS
 {
@@ -79,7 +77,7 @@ namespace SIS
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     Serverpath = dt.Rows[i]["IMAGE_PATH"].ToString();
-                    temppath = saveDir.TrimEnd('\\') + "\\" + Serverpath.Substring(Serverpath.LastIndexOf("/") + 1);
+                    temppath = saveDir.TrimEnd('\\') + "\\RY47126020100105090659109.jpg";// +Serverpath.Substring(Serverpath.LastIndexOf("\\") + 1);
                     switch (fileTranfer.FileDown(Serverpath, temppath))
                     {
                         case 1:
@@ -117,14 +115,14 @@ namespace SIS
                         }
                     }
                     if (GetConfig.IsAddLocMap)
-                        this.DownLoadLocMap(saveDir,dt.Rows[i]["IMAGE_ID"].ToString(), arrayImg.Count - 1);//下载定位图
+                        this.DownLoadLocMap(saveDir, dt.Rows[i]["IMAGE_ID"].ToString(), arrayImg.Count - 1);//下载定位图
                 }
                 if (Message != "")
                     Message = "下载" + Message + "文件失败！";
                 if (Message2 != "")
                     Message += "服务器图片：" + Message2 + "不存在！";
                 if (Message != "")
-                    MessageBox.Show(Message,"提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show(Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return 0;
             }
             catch
@@ -141,7 +139,7 @@ namespace SIS
         /// <param name="MapId"></param>
         /// <param name="index"></param>
         /// <returns></returns>
-        private int DownLoadLocMap(string saveDir,string MapId,int index)
+        private int DownLoadLocMap(string saveDir, string MapId, int index)
         {
             BLocationMap bLocMap = new BLocationMap();
             try
@@ -151,7 +149,7 @@ namespace SIS
                 {
                     string Serverpath = mLocMap.MAP_PATH;
                     string temppath = saveDir + "\\" + Serverpath.Substring(Serverpath.LastIndexOf("/") + 1);
-                    if (fileTranfer.FileDown(Serverpath, temppath) ==1)
+                    if (fileTranfer.FileDown(Serverpath, temppath) == 1)
                     {
                         arrayImg[index].Inf = mLocMap.MAP_EXPLAIN;
                         arrayImg[index].LocMapPath = temppath;
@@ -287,7 +285,7 @@ namespace SIS
         /// 下载报告
         /// </summary>
         /// <returns></returns>
-        public IModel ReportDownLoad(IModel iWorklist,string saveDir)
+        public IModel ReportDownLoad(IModel iWorklist, string saveDir)
         {
             string ReportPath = saveDir + "\\report.doc";
             try

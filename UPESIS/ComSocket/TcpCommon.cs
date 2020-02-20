@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Security.Cryptography;
 using System.IO;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 
 namespace ComSocket
 {
@@ -24,7 +22,7 @@ namespace ComSocket
                 hash = md5.ComputeHash(fs);
             }
             return BitConverter.ToString(hash);
-            
+
         }
 
         /// <summary>
@@ -142,8 +140,8 @@ namespace ComSocket
         internal bool SendMessage(TcpPackage tp, NetworkStream stream)
         {
             byte[] resultData = tp.CreateBuffer();
-                stream.Write(resultData, 0, resultData.Length);
-                return true;
+            stream.Write(resultData, 0, resultData.Length);
+            return true;
         }
 
         /// <summary>
@@ -153,7 +151,7 @@ namespace ComSocket
         /// <returns></returns>
         internal TcpPackage ReadMessage(NetworkStream stream)
         {
-            int maxlenght=0;
+            int maxlenght = 0;
             int i = 0;
             byte[] resultbyte = new byte[_blockLength];
 
@@ -161,16 +159,26 @@ namespace ComSocket
             stream.Read(msghead, 0, _headLength);
             TcpPackage tp = new TcpPackage();
             tp.DeTcpPackage(msghead);
-            while (maxlenght < tp.MsgLength)
+            int currev = tp.MsgLength;
+            while (currev == tp.MsgLength)
             {
-                int currev= stream.Read(tp.MsgBuffer, 0, tp.MsgLength);
-                Array.Copy(tp.MsgBuffer, 0, resultbyte, maxlenght, currev);
-                maxlenght += currev;
+                try
+                {
+                    currev = stream.Read(tp.MsgBuffer, 0, tp.MsgLength);
+                    Array.Copy(tp.MsgBuffer, 0, resultbyte, maxlenght, currev);
+                    maxlenght += currev;
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
+            tp.MsgBuffer = new byte[maxlenght];
+            tp.MsgLength = maxlenght;
             Array.Copy(resultbyte, 0, tp.MsgBuffer, 0, maxlenght);
             return tp;
         }
-        
+
         /// <summary>
         /// 获取要读取的数据的大小
         /// </summary>

@@ -1,24 +1,22 @@
 using System;
 using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
 using System.IO;
+using System.Text;
 using System.Threading;
 
 namespace ComSocket
 {
     public partial class TcpSock : Component
     {
-        private static readonly int _blockLength=1024*1024;
+        private static readonly int _blockLength = 1024 * 1024;
         private TcpClientHelper client;
         private Thread thdExec = null;
         public TcpSock()
         {
-            
+
             InitializeComponent();
             tp = new TcpPackage("YCCOM1.0", Type, Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength, Reserve, MsgBuffer);
-            
+
         }
 
         public TcpSock(IContainer container)
@@ -26,19 +24,19 @@ namespace ComSocket
             container.Add(this);
 
             InitializeComponent();
-            tp = new TcpPackage("YCCOM1.0", Type, Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength,Reserve, MsgBuffer);
-            
-            
+            tp = new TcpPackage("YCCOM1.0", Type, Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength, Reserve, MsgBuffer);
+
+
         }
         #region 属性
-        private string _Type="R1M";//发送的时候设置 R1M R11 等，接收到包不修改，保持原值
-        private string _isend="0";
-        private string _serverType="FL";
-        private string _sourceIP="127.0.0.1";
-        private int _sequence=0;
+        private string _Type = "R1M";//发送的时候设置 R1M R11 等，接收到包不修改，保持原值
+        private string _isend = "0";
+        private string _serverType = "FL";
+        private string _sourceIP = "127.0.0.1";
+        private int _sequence = 0;
         private string _cmdHead = "DownFL";
         private int _tag = 0;
-        private int _msgLength=0;
+        private int _msgLength = 0;
         private byte[] _msgBuffer;
         private int _stopFlag;
 
@@ -50,14 +48,16 @@ namespace ComSocket
         public string Type
         {
             set { this._Type = value; }
-            get {
+            get
+            {
                 if (this._Type == null)
                 {
                     return "R1M";
                 }
                 else
                 {
-                    return this._Type;} 
+                    return this._Type;
+                }
             }
         }
         /// <summary>
@@ -77,7 +77,7 @@ namespace ComSocket
         public string SourceIP
         {
             set { this._sourceIP = value; }
-            get {return this._sourceIP; }
+            get { return this._sourceIP; }
         }
         public int Sequence
         {
@@ -141,7 +141,7 @@ namespace ComSocket
                 }
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 OnError(ex.ToString());
                 return false;
@@ -296,49 +296,49 @@ namespace ComSocket
         {
             //try
             //{
-                tp = new TcpPackage("YCCOM1.0", "R1M", Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength, Reserve, MsgBuffer);
+            tp = new TcpPackage("DCCOM1.0", "R1M", Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength, Reserve, MsgBuffer);
 
 
-                //try
-                //{
-                byte[] btPath = Encoding.Default.GetBytes(serverpath);
-                //TcpClientHelper client = new TcpClientHelper("172.18.92.116", 1999);
-                //client.Start();
-                tp.MsgLength = btPath.Length;
-                tp.MsgBuffer = btPath;
-                client.SendMessage(tp);
-                FileStream fs = new FileStream(localpath, FileMode.OpenOrCreate, FileAccess.Write);
-                try
+            //try
+            //{
+            byte[] btPath = Encoding.Default.GetBytes(serverpath);
+            //TcpClientHelper client = new TcpClientHelper("172.18.92.116", 1999);
+            //client.Start();
+            tp.MsgLength = btPath.Length;
+            tp.MsgBuffer = btPath;
+            client.SendMessage(tp);
+            FileStream fs = new FileStream(localpath, FileMode.OpenOrCreate, FileAccess.Write);
+            try
+            {
+                while (true)
                 {
-                    while (true)
+                    tp = client.ReadMessage();
+                    if (tp.CmdHead == "E00001")//服务器上无此文件,删除本地空文件并返回-1
                     {
-                        tp = client.ReadMessage();
-                        if (tp.CmdHead == "E00001")//服务器上无此文件,删除本地空文件并返回-1
-                        {
-                            fs.Close();
-                            File.Delete(localpath);
-                            return -1;
-                            break;
-                        }
-                        fs.Write(tp.MsgBuffer, 0, tp.MsgLength);
-                        if (tp.Isend == "1")
-                        {
-                            break;//收完
-                        }
-                        tp.CmdHead = "@NEXT0";
-                        tp.Sequence++;
-                        tp.Type = "R1M";
-                        tp.MsgBuffer = new byte[0];
-                        client.SendMessage(tp);
+                        fs.Close();
+                        File.Delete(localpath);
+                        return -1;
+                        break;
                     }
-                    fs.Close();
-                    return 1;
+                    fs.Write(tp.MsgBuffer, 0, tp.MsgLength);
+                    if (tp.Isend == "1")
+                    {
+                        break;//收完
+                    }
+                    tp.CmdHead = "@NEXT0";
+                    tp.Sequence++;
+                    tp.Type = "R1M";
+                    tp.MsgBuffer = new byte[0];
+                    client.SendMessage(tp);
                 }
-                catch
-                {
-                    fs.Close();
-                    return -2;
-                }
+                fs.Close();
+                return 1;
+            }
+            catch
+            {
+                fs.Close();
+                return -2;
+            }
             //}
             //catch
             //{
@@ -453,7 +453,7 @@ namespace ComSocket
             }
             if (finfo.Length <= 0)
             {
-                WriteLog(localpath + "大小："+finfo.Length.ToString()+"\r\n");
+                WriteLog(localpath + "大小：" + finfo.Length.ToString() + "\r\n");
             }
             //if (!File.Exists(localpath))//传输前判断本地文件是否存在
             //{
@@ -489,7 +489,7 @@ namespace ComSocket
                 fs.Close();
                 return 1;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 fs.Close();
                 WriteLog(ex.Message.ToString() + "\r\n");
@@ -510,7 +510,7 @@ namespace ComSocket
             tp.MsgBuffer = btPath;
             tp.CmdHead = "QPInfo";
             client.SendMessage(tp);
-            byte[] RcvData=new byte[0];
+            byte[] RcvData = new byte[0];
             try
             {
                 while (true)
@@ -521,7 +521,7 @@ namespace ComSocket
                         return new byte[0];
                         break;
                     }
-                   RcvData= clsDataConvert.Concat(tp.MsgBuffer, RcvData);
+                    RcvData = clsDataConvert.Concat(tp.MsgBuffer, RcvData);
                     if (tp.Isend == "1")
                     {
                         break;//收完
@@ -546,7 +546,7 @@ namespace ComSocket
         /// <returns></returns>
         public int CmtRpt(string instance_uid)
         {
-            
+
             tp = new TcpPackage("YCCOM1.0", "R1M", Isend, ServerType, SourceIP, Sequence, CmdHead, Tag, MsgLength, Reserve, MsgBuffer);
             tp.ServerType = "DA";
             byte[] btPath = Encoding.Default.GetBytes(instance_uid);
@@ -554,7 +554,7 @@ namespace ComSocket
             tp.MsgBuffer = btPath;
             tp.CmdHead = "CmtRpt";
             client.SendMessage(tp);
-           // byte[] RcvData = new byte[0];
+            // byte[] RcvData = new byte[0];
             try
             {
                 while (true)
@@ -562,11 +562,11 @@ namespace ComSocket
                     tp = client.ReadMessage();
                     if (tp.CmdHead == "E00001")//服务器上无此文件,删除本地空文件并返回-1
                     {
-                       // return new byte[0];
+                        // return new byte[0];
                         return -1;
                         break;
                     }
-                  //  RcvData = clsDataConvert.Concat(tp.MsgBuffer, RcvData);
+                    //  RcvData = clsDataConvert.Concat(tp.MsgBuffer, RcvData);
                     if (tp.Isend == "1")
                     {
                         break;//收完
@@ -577,17 +577,17 @@ namespace ComSocket
                     tp.MsgBuffer = new byte[0];
                     client.SendMessage(tp);
                 }
-               // return RcvData;
+                // return RcvData;
                 return 1;
             }
             catch
             {
-               // return null;
+                // return null;
                 return -1;
             }
         }
         #endregion 公有方法
-            
+
 
 
         #region 事件

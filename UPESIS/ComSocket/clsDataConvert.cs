@@ -1,10 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
 using System.Net;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace ComSocket
 {
@@ -38,7 +33,7 @@ namespace ComSocket
         //    memStream.Close();
         //    return newobj;
         //}
-        
+
         /// <summary>
         /// 序列化对象
         /// </summary>
@@ -109,12 +104,13 @@ namespace ComSocket
         /// <returns></returns>
         public static int ByteToInt(byte[] Rdata, int start, int length)
         {
-            
+
             //byte[] data = new byte[length];
             //Rdata.CopyTo(data, s);
-           // Rdata.
-           // SortByte(data);
-            return IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(Rdata, start));
+            // Rdata.
+            // SortByte(data);
+            //return IPAddress.NetworkToHostOrder(System.BitConverter.ToInt32(Rdata, start));
+            return System.BitConverter.ToInt32(Rdata, start);
         }
         /// <summary>
         /// string 转成Byte[]
@@ -159,6 +155,8 @@ namespace ComSocket
         public static string ByteToIp(byte[] Rdata, int start, int length)
         {
             uint ipInt = System.BitConverter.ToUInt32(Rdata, start);
+            int x = 192;
+            char c = (char)x;
             IPAddress ip = new IPAddress(ipInt);
             return ip.ToString();
         }
