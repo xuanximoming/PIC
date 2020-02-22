@@ -160,7 +160,7 @@ namespace ComSocket
             TcpPackage tp = new TcpPackage();
             tp.DeTcpPackage(msghead);
             int currev = tp.MsgLength;
-            while (currev == tp.MsgLength)
+            while (maxlenght < tp.MsgLength)
             {
                 try
                 {
@@ -170,11 +170,9 @@ namespace ComSocket
                 }
                 catch (Exception ex)
                 {
-
+                    break;
                 }
             }
-            tp.MsgBuffer = new byte[maxlenght];
-            tp.MsgLength = maxlenght;
             Array.Copy(resultbyte, 0, tp.MsgBuffer, 0, maxlenght);
             return tp;
         }

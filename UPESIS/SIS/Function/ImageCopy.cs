@@ -71,13 +71,14 @@ namespace SIS
         {
             try
             {
-                fileTranfer.ConnServer();//2010-03-17ÐÞ¸Ä
+
                 string Message = "", Message2 = "", Serverpath = "", temppath = "", MarkPath = "";
                 DataTable dt = Bimage.GetList("1=1 and EXAM_ACCESSION_NUM='" + mWorklist.EXAM_ACCESSION_NUM + "'order by IS_PRINT DESC");
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
+                    fileTranfer.ConnServer();//2010-03-17ÐÞ¸Ä
                     Serverpath = dt.Rows[i]["IMAGE_PATH"].ToString();
-                    temppath = saveDir.TrimEnd('\\') + "\\RY47126020100105090659109.jpg";// +Serverpath.Substring(Serverpath.LastIndexOf("\\") + 1);
+                    temppath = saveDir.TrimEnd('\\') + "\\" + Serverpath.Substring(Serverpath.LastIndexOf("\\") + 1);
                     switch (fileTranfer.FileDown(Serverpath, temppath))
                     {
                         case 1:

@@ -86,8 +86,9 @@ namespace ComSocket
         /// <returns></returns>
         public static byte[] ConvertIntToByte(int value)
         {
-            return (System.BitConverter.GetBytes(IPAddress.HostToNetworkOrder(value)));
+            //return (System.BitConverter.GetBytes(IPAddress.HostToNetworkOrder(value)));
             //return SortByte((System.BitConverter.GetBytes(value)));
+            return (System.BitConverter.GetBytes(value));
         }
         private static byte[] SortByte(byte[] bt)
         {
